@@ -8,7 +8,7 @@ import { makeStyles } from '@material-ui/core/styles';
 // @material-ui/icons
 // core components
 import Header from 'components/Header/Header.js';
-import Footer from 'components/Footer/Footer.js';
+import Footer from 'components/Footer/OldFooter.js';
 import GridContainer from 'components/Grid/GridContainer.js';
 import GridItem from 'components/Grid/GridItem.js';
 import Button from 'components/CustomButtons/Button.js';
@@ -27,6 +27,7 @@ import SectionCompletedExamples from './Sections/SectionCompletedExamples.js';
 import SectionLogin from './Sections/SectionLogin.js';
 import SectionExamples from './Sections/SectionExamples.js';
 import SectionDownload from './Sections/SectionDownload.js';
+import CustomInput from 'components/CustomInput/CustomInput.js';
 
 import styles from 'assets/jss/material-kit-react/views/components.js';
 
@@ -35,9 +36,17 @@ const useStyles = makeStyles(styles);
 export default function Components(props) {
   const classes = useStyles();
   const { ...rest } = props;
+  const logo = (
+    <img
+      style={{ width: '80%' }}
+      alt='IIT Tech Ambit Logo'
+      src='https://cdn.iit-techambit.in/websiteAssets/logo.png'
+      className='logo'
+    />
+  );
   return (
     <div>
-      <Header
+      {/* <Header
         rightLinks={<HeaderLinks />}
         fixed
         color='white'
@@ -46,23 +55,32 @@ export default function Components(props) {
           color: 'white'
         }}
         {...rest}
-      />
-      <Parallax image={require('assets/img/bg4.jpg')}>
+      /> */}
+      {/*here in parallax a background image can be placed with image={require('assets/img/bg4.jpg')} */}
+      <Parallax>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
-                <h1 className={classes.title}>Material Kit React.</h1>
-                <h3 className={classes.subtitle}>
-                  A Badass Material-UI Kit based on Material Design.
+                <h1 className={classes.title}>{logo}</h1>
+                <h3 className={classes.subContTitle}>
+                  Become tech savy in just 5 minutes
                 </h3>
+                <h3 className={classes.subtitle}>
+                  Get Updated with latest research and tech stories from the PAN
+                  IIT Ecosystem, for free!
+                </h3>
+                <CustomInput labelText='Your Mail' id='float' focussed />
               </div>
+              <Button type='button' color='success' round>
+                Smash
+              </Button>
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
 
-      <div className={classNames(classes.main, classes.mainRaised)}>
+      {/* <div className={classNames(classes.main, classes.mainRaised)}>
         <SectionBasics />
         <SectionNavbars />
         <SectionTabs />
@@ -82,8 +100,8 @@ export default function Components(props) {
         </GridItem>
         <SectionExamples />
         <SectionDownload />
-      </div>
-      <Footer />
+      </div>*/}
+      {/* <Footer /> */}
     </div>
   );
 }
