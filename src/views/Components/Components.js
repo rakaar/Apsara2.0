@@ -78,7 +78,7 @@ export default function Components(props) {
                   </div>
                   <Button
                     type='button'
-                    color='success'
+                    color='info'
                     round
                     onClick={() => setIsNotSub(false)}
                   >

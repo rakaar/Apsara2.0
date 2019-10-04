@@ -27,7 +27,7 @@ export default function HeaderLinks(props) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
-        <CustomDropdown
+        {/* <CustomDropdown
           noLiPadding
           buttonText='Newsletters'
           buttonProps={{
@@ -47,7 +47,12 @@ export default function HeaderLinks(props) {
               Current Newsletters
             </a>
           ]}
-        />
+        /> */}
+        <Button color='transparent' target='_blank' className={classes.navLink}>
+          <Link to='/archive' style={{ color: '#555555' }}>
+            Archive
+          </Link>
+        </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button color='transparent' target='_blank' className={classes.navLink}>

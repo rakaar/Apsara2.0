@@ -29,7 +29,7 @@ const carouselStyle = {
     marginBottom: '15%'
   },
   bgCol: {
-    backgroundColor: '#5aaf50'
+    backgroundColor: '#46b8da'
   }
 };
 

@@ -38,7 +38,7 @@ const componentsStyle = {
   subContTitle: {
     fontWeight: '900',
     fontSize: '30px',
-    color: '#61d2b2'
+    color: '#46b8da'
   }
 };
 
