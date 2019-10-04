@@ -50,13 +50,10 @@ export default function HeaderLinks(props) {
         />
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Button
-          href='https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar'
-          color='transparent'
-          target='_blank'
-          className={classes.navLink}
-        >
-          Stories
+        <Button color='transparent' target='_blank' className={classes.navLink}>
+          <Link to='/stories' style={{ color: '#555555' }}>
+            Stories
+          </Link>
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>

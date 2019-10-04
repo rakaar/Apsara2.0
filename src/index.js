@@ -14,6 +14,7 @@ import LoginPage from 'views/LoginPage/LoginPage.js';
 import Footer from 'components/Footer/OldFooter.js';
 import Archive from 'views/Archive/Archive.js';
 import Team from 'views/Team/Team.js';
+import Stories from 'views/Stories/Stories.js';
 
 var hist = createBrowserHistory();
 
@@ -26,6 +27,7 @@ ReactDOM.render(
       <Route path='/' component={Navbar} />
       <Route path='/archive' component={Archive} />
       <Route path='/team' component={Team} />
+      <Route path='/stories' component={Stories} />
       <Route exact path='/' component={Components} />
       <Route path='/' component={Footer} />
     </div>
