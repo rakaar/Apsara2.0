@@ -15,3 +15,11 @@
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
+.card {
+  /* the other rules */
+  transition: height 1s, box-shadow 0.3s;
+}
+.card:hover {
+  box-shadow: 20px 20px 40px 0px rgba(0, 0, 0, 0.5);
+}
