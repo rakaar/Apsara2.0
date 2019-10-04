@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, Fragment } from 'react';
+import { AnimateOnChange } from 'react-animation';
 // nodejs library that concatenates classes
 import classNames from 'classnames';
 // react components for routing our app without refresh
@@ -34,6 +35,7 @@ import styles from 'assets/jss/material-kit-react/views/components.js';
 const useStyles = makeStyles(styles);
 
 export default function Components(props) {
+  const [isNotSub, setIsNotSub] = useState(true);
   const classes = useStyles();
   const { ...rest } = props;
   const logo = (
@@ -59,24 +61,46 @@ export default function Components(props) {
       {/*here in parallax a background image can be placed with image={require('assets/img/bg4.jpg')} */}
       <Parallax>
         <div className={classes.container}>
-          <GridContainer>
-            <GridItem>
-              <div className={classes.brand}>
-                <h1 className={classes.title}>{logo}</h1>
-                <h3 className={classes.subContTitle}>
-                  Become tech savy in just 5 minutes
-                </h3>
+          <AnimateOnChange>
+            {isNotSub ? (
+              <GridContainer>
+                <GridItem>
+                  <div className={classes.brand}>
+                    <h1 className={classes.title}>{logo}</h1>
+                    <h3 className={classes.subContTitle}>
+                      Become tech savy in just 5 minutes
+                    </h3>
+                    <h3 className={classes.subtitle}>
+                      Get Updated with latest research and tech stories from the
+                      PAN IIT Ecosystem, for free!
+                    </h3>
+                    <CustomInput labelText='Your Mail' id='float' focussed />
+                  </div>
+                  <Button
+                    type='button'
+                    color='success'
+                    round
+                    onClick={() => setIsNotSub(false)}
+                  >
+                    Smash
+                  </Button>
+                </GridItem>
+              </GridContainer>
+            ) : (
+              <Fragment>
+                <h1 className={classes.title}>Welcome to the tech world</h1>
                 <h3 className={classes.subtitle}>
-                  Get Updated with latest research and tech stories from the PAN
-                  IIT Ecosystem, for free!
+                  Watch out for weekly dose of the tech gospel every Sunday
+                  morning!
                 </h3>
-                <CustomInput labelText='Your Mail' id='float' focussed />
-              </div>
-              <Button type='button' color='success' round>
-                Smash
-              </Button>
-            </GridItem>
-          </GridContainer>
+                <br />
+                <h3 className={classes.subtitle}>
+                  Can't Wait ?{' '}
+                  <a href='/archive'>Checkout the latest issue here</a>
+                </h3>
+              </Fragment>
+            )}
+          </AnimateOnChange>
         </div>
       </Parallax>
 

@@ -10,6 +10,8 @@ import imagesStyles from 'assets/jss/material-kit-react/imagesStyles.js';
 
 import { cardTitle } from 'assets/jss/material-kit-react.js';
 
+import './ArticleCard.scss';
+
 const styles = {
   ...imagesStyles,
   cardTitle
@@ -34,6 +36,10 @@ export default function Cards() {
           bulk of the card's content.
         </p>
         <Button color='info'>Read More</Button>
+        <div className='other-data'>
+          <span className='date'>9th October 19</span>
+          <span className='min-read'>4 min read</span>
+        </div>
       </CardBody>
     </Card>
   );
