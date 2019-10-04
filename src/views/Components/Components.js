@@ -103,6 +103,7 @@ export default function Components(props) {
           </AnimateOnChange>
         </div>
       </Parallax>
+      <SectionCarousel />
 
       {/* <div className={classNames(classes.main, classes.mainRaised)}>
         <SectionBasics />
