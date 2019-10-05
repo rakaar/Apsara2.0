@@ -1,0 +1,25 @@
+.issue-data {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.date {
+  color: #3e9fef;
+  font-weight: 1000;
+}
+
+.download {
+  color: #738a94;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.download:hover {
+  background-color: #e6e6e6;
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
