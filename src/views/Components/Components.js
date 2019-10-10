@@ -9,6 +9,7 @@ import { makeStyles } from '@material-ui/core/styles';
 // core components
 import Header from 'components/Header/Header.js';
 import Footer from 'components/Footer/OldFooter.js';
+import MobileFooter from 'components/Footer/Footer.js';
 import GridContainer from 'components/Grid/GridContainer.js';
 import GridItem from 'components/Grid/GridItem.js';
 import Button from 'components/CustomButtons/Button.js';
@@ -34,7 +35,7 @@ import validator from 'email-validator';
 import { AnimateOnChange } from 'react-animation';
 
 import styles from 'assets/jss/material-kit-react/views/components.js';
-
+import './Footer.scss';
 const useStyles = makeStyles(styles);
 
 export default function Components(props) {
@@ -108,7 +109,7 @@ export default function Components(props) {
               </GridContainer>
             ) : (
               <Fragment>
-                <h1 className={classes.title}>Welcome to the tech world</h1>
+                <h1 className={classes.subTitle}>Welcome to the tech world</h1>
                 <h3 className={classes.subtitle}>
                   Watch out for weekly dose of the tech gospel every Sunday
                   morning!
@@ -124,6 +125,9 @@ export default function Components(props) {
         </div>
       </Parallax>
       <SectionCarousel />
+      <div className='mobile-footer'>
+        <MobileFooter />
+      </div>
 
       {/* <div className={classNames(classes.main, classes.mainRaised)}>
         <SectionBasics />
@@ -146,7 +150,7 @@ export default function Components(props) {
         <SectionExamples />
         <SectionDownload />
       </div>*/}
-      {/* <Footer /> */}
+      {/* */}
     </div>
   );
 }
