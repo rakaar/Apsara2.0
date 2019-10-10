@@ -1,5 +1,4 @@
 import React, { useState, Fragment } from 'react';
-import { AnimateOnChange } from 'react-animation';
 // nodejs library that concatenates classes
 import classNames from 'classnames';
 // react components for routing our app without refresh
@@ -30,12 +29,16 @@ import SectionExamples from './Sections/SectionExamples.js';
 import SectionDownload from './Sections/SectionDownload.js';
 import CustomInput from 'components/CustomInput/CustomInput.js';
 
+import validator from 'email-validator';
+
 import styles from 'assets/jss/material-kit-react/views/components.js';
 
 const useStyles = makeStyles(styles);
 
 export default function Components(props) {
+  const [mail, setMail] = useState('');
   const [isNotSub, setIsNotSub] = useState(true);
+  const [showMailErr, setShowMailErr] = useState(false);
   const classes = useStyles();
   const { ...rest } = props;
   const logo = (
@@ -46,6 +49,15 @@ export default function Components(props) {
       className='logo'
     />
   );
+
+  const errMsg = <a style={{ color: 'red' }}>Please enter a valid email !</a>;
+
+  const handleChange = e => setMail(e.target.value);
+  const handleSmash = () => {
+    if (validator.validate(mail)) setIsNotSub(false);
+    else setShowMailErr(true);
+  };
+
   return (
     <div>
       {/* <Header
@@ -61,46 +73,45 @@ export default function Components(props) {
       {/*here in parallax a background image can be placed with image={require('assets/img/bg4.jpg')} */}
       <Parallax>
         <div className={classes.container}>
-          <AnimateOnChange>
-            {isNotSub ? (
-              <GridContainer>
-                <GridItem>
-                  <div className={classes.brand}>
-                    <h1 className={classes.title}>{logo}</h1>
-                    <h3 className={classes.subContTitle}>
-                      Become tech savy in just 5 minutes
-                    </h3>
-                    <h3 className={classes.subtitle}>
-                      Get Updated with latest research and tech stories from the
-                      PAN IIT Ecosystem, for free!
-                    </h3>
-                    <CustomInput labelText='Your Mail' id='float' focussed />
-                  </div>
-                  <Button
-                    type='button'
-                    color='info'
-                    round
-                    onClick={() => setIsNotSub(false)}
-                  >
-                    Smash
-                  </Button>
-                </GridItem>
-              </GridContainer>
-            ) : (
-              <Fragment>
-                <h1 className={classes.title}>Welcome to the tech world</h1>
-                <h3 className={classes.subtitle}>
-                  Watch out for weekly dose of the tech gospel every Sunday
-                  morning!
-                </h3>
-                <br />
-                <h3 className={classes.subtitle}>
-                  Can't Wait ?{' '}
-                  <a href='/archive'>Checkout the latest issue here</a>
-                </h3>
-              </Fragment>
-            )}
-          </AnimateOnChange>
+          {isNotSub ? (
+            <GridContainer>
+              <GridItem>
+                <div className={classes.brand}>
+                  <h1 className={classes.title}>{logo}</h1>
+                  <h3 className={classes.subContTitle}>
+                    Become tech savy in just 5 minutes
+                  </h3>
+                  <h3 className={classes.subtitle}>
+                    Get Updated with latest research and tech stories from the
+                    PAN IIT Ecosystem, for free!
+                  </h3>
+                  <CustomInput
+                    labelText='Your Mail'
+                    id='float'
+                    inputProps={{ onChange: handleChange }}
+                    focussed
+                  />
+                </div>
+                <Button type='button' color='info' round onClick={handleSmash}>
+                  Smash
+                </Button>
+              </GridItem>
+              {showMailErr ? errMsg : ''}
+            </GridContainer>
+          ) : (
+            <Fragment>
+              <h1 className={classes.title}>Welcome to the tech world</h1>
+              <h3 className={classes.subtitle}>
+                Watch out for weekly dose of the tech gospel every Sunday
+                morning!
+              </h3>
+              <br />
+              <h3 className={classes.subtitle}>
+                Can't Wait ?{' '}
+                <a href='/archive'>Checkout the latest issue here</a>
+              </h3>
+            </Fragment>
+          )}
         </div>
       </Parallax>
       <SectionCarousel />
