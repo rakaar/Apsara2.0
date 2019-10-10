@@ -29,14 +29,15 @@ import SectionExamples from './Sections/SectionExamples.js';
 import SectionDownload from './Sections/SectionDownload.js';
 import CustomInput from 'components/CustomInput/CustomInput.js';
 
+// installed npm libraries
 import validator from 'email-validator';
+import { AnimateOnChange } from 'react-animation';
 
 import styles from 'assets/jss/material-kit-react/views/components.js';
 
 const useStyles = makeStyles(styles);
 
 export default function Components(props) {
-  const [mail, setMail] = useState('');
   const [isNotSub, setIsNotSub] = useState(true);
   const [showMailErr, setShowMailErr] = useState(false);
   const classes = useStyles();
@@ -51,10 +52,11 @@ export default function Components(props) {
   );
 
   const errMsg = <a style={{ color: 'red' }}>Please enter a valid email !</a>;
+  const textInput = React.createRef();
 
-  const handleChange = e => setMail(e.target.value);
   const handleSmash = () => {
-    if (validator.validate(mail)) setIsNotSub(false);
+    const inputMail = textInput.current.value;
+    if (validator.validate(inputMail)) setIsNotSub(false);
     else setShowMailErr(true);
   };
 
@@ -73,45 +75,52 @@ export default function Components(props) {
       {/*here in parallax a background image can be placed with image={require('assets/img/bg4.jpg')} */}
       <Parallax>
         <div className={classes.container}>
-          {isNotSub ? (
-            <GridContainer>
-              <GridItem>
-                <div className={classes.brand}>
-                  <h1 className={classes.title}>{logo}</h1>
-                  <h3 className={classes.subContTitle}>
-                    Become tech savy in just 5 minutes
-                  </h3>
-                  <h3 className={classes.subtitle}>
-                    Get Updated with latest research and tech stories from the
-                    PAN IIT Ecosystem, for free!
-                  </h3>
-                  <CustomInput
-                    labelText='Your Mail'
-                    id='float'
-                    inputProps={{ onChange: handleChange }}
-                    focussed
-                  />
-                </div>
-                <Button type='button' color='info' round onClick={handleSmash}>
-                  Smash
-                </Button>
-              </GridItem>
-              {showMailErr ? errMsg : ''}
-            </GridContainer>
-          ) : (
-            <Fragment>
-              <h1 className={classes.title}>Welcome to the tech world</h1>
-              <h3 className={classes.subtitle}>
-                Watch out for weekly dose of the tech gospel every Sunday
-                morning!
-              </h3>
-              <br />
-              <h3 className={classes.subtitle}>
-                Can't Wait ?{' '}
-                <a href='/archive'>Checkout the latest issue here</a>
-              </h3>
-            </Fragment>
-          )}
+          <AnimateOnChange>
+            {isNotSub ? (
+              <GridContainer>
+                <GridItem>
+                  <div className={classes.brand}>
+                    <h1 className={classes.title}>{logo}</h1>
+                    <h3 className={classes.subContTitle}>
+                      Become tech savy in just 5 minutes
+                    </h3>
+                    <h3 className={classes.subtitle}>
+                      Get Updated with latest research and tech stories from the
+                      PAN IIT Ecosystem, for free!
+                    </h3>
+                    <CustomInput
+                      labelText='Your Mail'
+                      id='float'
+                      inputProps={{ inputRef: textInput }}
+                      focussed
+                    />
+                  </div>
+                  <Button
+                    type='button'
+                    color='info'
+                    round
+                    onClick={handleSmash}
+                  >
+                    Smash
+                  </Button>
+                </GridItem>
+                {showMailErr ? errMsg : ''}
+              </GridContainer>
+            ) : (
+              <Fragment>
+                <h1 className={classes.title}>Welcome to the tech world</h1>
+                <h3 className={classes.subtitle}>
+                  Watch out for weekly dose of the tech gospel every Sunday
+                  morning!
+                </h3>
+                <br />
+                <h3 className={classes.subtitle}>
+                  Can't Wait ?{' '}
+                  <a href='/archive'>Checkout the latest issue here</a>
+                </h3>
+              </Fragment>
+            )}
+          </AnimateOnChange>
         </div>
       </Parallax>
       <SectionCarousel />
