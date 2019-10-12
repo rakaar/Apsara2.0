@@ -42,6 +42,7 @@ export default function SectionCarousel() {
                 <div>
                   {/* <img src={image1} alt="First slide" className="slick-image" /> */}
                   <img
+                    id='name-testimonials'
                     style={{ width: '40%', margin: '4%' }}
                     src={image}
                     alt='...'
