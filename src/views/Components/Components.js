@@ -148,9 +148,9 @@ export default function Components(props) {
       <br />
       <h2 className='carousel-title'>Our Readers Speak..</h2>
       <SectionCarousel />
-      <div className='mobile-footer'>
+      {/* <div className='mobile-footer'>
         <MobileFooter />
-      </div>
+      </div> */}
 
       {/* <div className={classNames(classes.main, classes.mainRaised)}>
         <SectionBasics />

@@ -15,7 +15,7 @@ import Footer from 'components/Footer/OldFooter.js';
 import Stories from 'views/Archive/Archive.js';
 import Team from 'views/Team/Team.js';
 import Issues from 'views/Stories/Stories.js';
-
+import MobileFooter from 'views/Components/MobileFooter.js';
 var hist = createBrowserHistory();
 
 ReactDOM.render(
@@ -30,6 +30,7 @@ ReactDOM.render(
       <Route path='/issues' component={Issues} />
       <Route exact path='/' component={Components} />
       <Route path='/' component={Footer} />
+      <Route path='/' component={MobileFooter} />
     </div>
   </Router>,
   document.getElementById('root')
