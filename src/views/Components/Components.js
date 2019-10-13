@@ -34,9 +34,14 @@ import CustomInput from 'components/CustomInput/CustomInput.js';
 import validator from 'email-validator';
 import { AnimateOnChange } from 'react-animation';
 
+import config from '../../config';
+import integrate from '../../integrate';
+
 import styles from 'assets/jss/material-kit-react/views/components.js';
 import './Footer.scss';
 const useStyles = makeStyles(styles);
+
+const subscribeEndpoint = config.endpoints.subscribe;
 
 export default function Components(props) {
   const [isNotSub, setIsNotSub] = useState(true);
@@ -57,7 +62,11 @@ export default function Components(props) {
 
   const handleSmash = () => {
     const inputMail = textInput.current.value;
-    if (validator.validate(inputMail)) setIsNotSub(false);
+    if (validator.validate(inputMail)) {
+      setIsNotSub(false);
+      integrate.postData(subscribeEndpoint, { 'email' : inputMail })
+
+      }
     else setShowMailErr(true);
   };
 
