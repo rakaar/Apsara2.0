@@ -22,7 +22,7 @@ const useStyles = makeStyles(styles);
 export default function Cards(props) {
   const classes = useStyles();
   return (
-    <Card style={{ width: '20rem', margin: '40px' }} className='card'>
+    <Card style={{ width: '23rem', margin: '40px' }} className='card'>
       <img
         style={{ height: '180px', width: '100%', display: 'block' }}
         className={classes.imgCardTop}
@@ -32,7 +32,13 @@ export default function Cards(props) {
       <CardBody>
         <h4 className={classes.cardTitle}>{props.title}</h4>
         <p>{props.desc}</p>
-        <Button color='info' href={props.link} target='blank'>
+        <Button
+          className='read-more'
+          color='twitter'
+          round
+          href={props.link}
+          target='blank'
+        >
           Read More
         </Button>
         <div className='other-data'>

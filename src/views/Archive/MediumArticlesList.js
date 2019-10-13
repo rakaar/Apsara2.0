@@ -2,7 +2,7 @@ const MediumArticlesList = [
   {
     title: 'Virtual Reality Lab at IIT Kharagpur',
     desc:
-      'Until fairly recently, the dream of donning a headset and disappearing into a virtual world belonged purely to the realm of science fiction',
+      'Until fairly recently, the dream of donning a headset and disappearing into a virtual world belonged purely to the realm of science fiction.',
     link:
       'https://medium.com/iit-technology-ambit/virtual-reality-lab-at-iit-kharagpur-b9c179736133',
     date: 'Oct 10 2019',
@@ -12,7 +12,7 @@ const MediumArticlesList = [
   {
     title: 'Novel 3D Printed Robotic Knee',
     desc:
-      'Modern prosthetic limbs are far more superior than those devloped in the last century but these new models have their limits',
+      'Modern prosthetic limbs are far more superior than those devloped in the last century but these new models have their limits.',
     link:
       'https://medium.com/iit-technology-ambit/novel-3d-printed-robotic-knee-6223a2a878d3',
     date: 'Oct 9 2019',
@@ -70,7 +70,8 @@ const MediumArticlesList = [
   },
   {
     title: 'AI is Predicting Solar Radiation',
-    desc: 'Climate change has been a very pressing issue lately.',
+    desc:
+      'Climate change has been a very pressing issue lately. All global leaders have been called to intervene, and alternative energy sources are a major go-to for most countries. ',
     link:
       'https://medium.com/iit-technology-ambit/ai-is-predicting-solar-radiation-1b8eb4dffdf',
     date: 'Sep 26 2019',
@@ -80,7 +81,7 @@ const MediumArticlesList = [
   {
     title: 'Modernism vs. Post-Modernism',
     desc:
-      'Post Modernism is a bit difficult. But simplifying and trying to make it a lighter read would just take away the beauty of the topic.',
+      'Post Modernism is a bit difficult. But simplifying and trying to make it a lighter read would just take away the beauty of the topic. So gear up with a nice dictionary and focus attention.',
     link:
       'https://medium.com/iit-technology-ambit/modernism-vs-post-modernism-7f571c975c9b',
     date: 'Sep 26 2019',
