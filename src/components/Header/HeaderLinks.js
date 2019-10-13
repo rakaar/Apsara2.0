@@ -49,15 +49,15 @@ export default function HeaderLinks(props) {
           ]}
         /> */}
         <Button color='transparent' target='_blank' className={classes.navLink}>
-          <Link to='/archive' style={{ color: '#555555' }}>
-            Archive
+          <Link to='/stories' style={{ color: '#555555' }}>
+            Stories
           </Link>
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button color='transparent' target='_blank' className={classes.navLink}>
-          <Link to='/stories' style={{ color: '#555555' }}>
-            Stories
+          <Link to='/issues' style={{ color: '#555555' }}>
+            Issues
           </Link>
         </Button>
       </ListItem>
