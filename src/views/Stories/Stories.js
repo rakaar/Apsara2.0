@@ -14,6 +14,7 @@ export default function Archive() {
   useEffect(() => {
     const fetchData = async () => {
       let res = await integrate.getData(issueEndpoint, {});
+      if (res == undefined) window.location.reload();
       SetIssuesArr(res.data.resource);
     };
     fetchData();
