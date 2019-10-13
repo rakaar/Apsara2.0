@@ -19,26 +19,25 @@ const styles = {
 
 const useStyles = makeStyles(styles);
 
-export default function Cards() {
+export default function Cards(props) {
   const classes = useStyles();
   return (
-    <Card style={{ width: '20rem' }} className='card'>
+    <Card style={{ width: '20rem', margin: '40px' }} className='card'>
       <img
         style={{ height: '180px', width: '100%', display: 'block' }}
         className={classes.imgCardTop}
-        src='...'
+        src={props.img}
         alt='Card-img-cap'
       />
       <CardBody>
-        <h4 className={classes.cardTitle}>Card title</h4>
-        <p>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
-        <Button color='info'>Read More</Button>
+        <h4 className={classes.cardTitle}>{props.title}</h4>
+        <p>{props.desc}</p>
+        <Button color='info' href={props.link} target='blank'>
+          Read More
+        </Button>
         <div className='other-data'>
-          <span className='date'>9th October 19</span>
-          <span className='min-read'>4 min read</span>
+          <span className='date'>{props.date}</span>
+          <span className='min-read'>{props.min} min read</span>
         </div>
       </CardBody>
     </Card>

@@ -1,7 +1,7 @@
 const baseurl = 'https://api.iit-techambit.in/';
 const issuecdn = 'https://cdn.iit-techambit.in/issue/';
 const endpoints = {
-  subscribe : 'subscribe/',
+  subscribe: 'subscribe/',
   user: {
     getFollowedTags: 'user/followedTags',
     getFeed: 'user/getFeed',
