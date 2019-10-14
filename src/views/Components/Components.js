@@ -146,7 +146,15 @@ export default function Components(props) {
         </div>
       </Fragment>
       <br />
-      <h2 className='carousel-title'>Our Readers Speak..</h2>
+      <h2
+        className='carousel-title'
+        style={{
+          fontWeight: '400',
+          letterSpacing: '1px'
+        }}
+      >
+        Our Readers Speak...
+      </h2>
       <SectionCarousel />
       {/* <div className='mobile-footer'>
         <MobileFooter />

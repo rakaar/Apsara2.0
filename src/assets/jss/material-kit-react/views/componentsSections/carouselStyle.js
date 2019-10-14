@@ -1,4 +1,5 @@
 import { container } from 'assets/jss/material-kit-react.js';
+import { CenterFocusStrong } from '@material-ui/icons';
 
 const carouselStyle = {
   section: {
@@ -9,14 +10,14 @@ const carouselStyle = {
     marginLeft: 'auto !important',
     marginRight: 'auto !important'
   },
-  name: {
-    fontWeight: '500',
-    textAlign: 'center'
-  },
   testimonial: {
-    textAlign: 'center',
+    fontWeight: '500'
+    // textAlign: 'center'
+  },
+  name: {
+    // textAlign: 'center',
     fontWeight: '400',
-    fontSize: '22px'
+    fontSize: '18px'
   },
   indivTest: {
     display: 'flex',
@@ -24,12 +25,19 @@ const carouselStyle = {
     justifyContent: 'center'
   },
   nameWithSt: {
-    marginLeft: '39%',
-    marginTop: '-28%',
-    marginBottom: '15%'
+    // marginLeft: '45%',
+    // marginTop: '0%',
+    // marginBottom: '0%',
+    // marginRight: '20%'
+    textAlign: 'center'
   },
   bgCol: {
-    backgroundColor: '#46b8da'
+    backgroundColor: '#b2dde6'
+  },
+  columnFlex: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center'
   }
 };
 
