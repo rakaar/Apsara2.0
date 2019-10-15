@@ -1,25 +1,32 @@
-import React from "react";
+import React from 'react';
 // react component for creating beautiful carousel
-import Carousel from "react-slick";
+import Carousel from 'react-slick';
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from '@material-ui/core/styles';
+import Box from '@material-ui/core/Box';
+
 // @material-ui/icons
-import LocationOn from "@material-ui/icons/LocationOn";
+import LocationOn from '@material-ui/icons/LocationOn';
 // core components
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import Card from "components/Card/Card.js";
+import GridContainer from 'components/Grid/GridContainer.js';
+import GridItem from 'components/Grid/GridItem.js';
+import Card from 'components/Card/Card.js';
+import Testimonials from './TestimonialsList.js';
 
-import image1 from "assets/img/bg.jpg";
-import image2 from "assets/img/bg2.jpg";
-import image3 from "assets/img/bg3.jpg";
+import image from 'assets/img/faces/avatar.jpg';
+import image1 from 'assets/img/bg.jpg';
+import image2 from 'assets/img/bg2.jpg';
+import image3 from 'assets/img/bg3.jpg';
 
-import styles from "assets/jss/material-kit-react/views/componentsSections/carouselStyle.js";
-
+import styles from 'assets/jss/material-kit-react/views/componentsSections/carouselStyle.js';
+import imgStyles from 'assets/jss/material-kit-react/views/componentsSections/typographyStyle.js';
+import './SectionCarousel.scss';
 const useStyles = makeStyles(styles);
+const useImgStyles = makeStyles(imgStyles);
 
 export default function SectionCarousel() {
   const classes = useStyles();
+  const imgClasses = useImgStyles();
   const settings = {
     dots: true,
     infinite: true,
@@ -34,38 +41,43 @@ export default function SectionCarousel() {
         <GridContainer>
           <GridItem xs={12} sm={12} md={8} className={classes.marginAuto}>
             <Card carousel>
-              <Carousel {...settings}>
-                <div>
-                  <img src={image1} alt="First slide" className="slick-image" />
-                  <div className="slick-caption">
-                    <h4>
-                      <LocationOn className="slick-icons" />
-                      Yellowstone National Park, United States
-                    </h4>
-                  </div>
-                </div>
-                <div>
-                  <img
-                    src={image2}
-                    alt="Second slide"
-                    className="slick-image"
-                  />
-                  <div className="slick-caption">
-                    <h4>
-                      <LocationOn className="slick-icons" />
-                      Somewhere Beyond, United States
-                    </h4>
-                  </div>
-                </div>
-                <div>
-                  <img src={image3} alt="Third slide" className="slick-image" />
-                  <div className="slick-caption">
-                    <h4>
-                      <LocationOn className="slick-icons" />
-                      Yellowstone National Park, United States
-                    </h4>
-                  </div>
-                </div>
+              <Carousel {...settings} className={classes.bgCol}>
+                {Testimonials.map(item => {
+                  return (
+                    <Box display='flex' flexDirection='row' p={5}>
+                      {/* <img src={image1} alt="First slide" className="slick-image" /> */}
+                      <Box p={1} m={2}>
+                        <img
+                          id='test-image'
+                          style={{
+                            width: '50%',
+                            height: 'auto',
+                            position: 'relative',
+                            left: '50%',
+                            right: '50%',
+                            transform: 'translateX(-50%)',
+                            borderRadius: '4%'
+                          }}
+                          src={item.img}
+                          alt='...'
+                          className={
+                            classes.imgRoundedCircle + ' ' + classes.imgFluid
+                          }
+                        />
+                      </Box>
+                      <Box p={1} m={1}>
+                        <div className={classes.nameWithSt} id='nameWithSt'>
+                          <h3 className={classes.testimonial} id='name'>
+                            {item.test}
+                          </h3>
+                          <h4 className={classes.name} id='test'>
+                            <em>{item.who}</em>
+                          </h4>
+                        </div>
+                      </Box>
+                    </Box>
+                  );
+                })}
               </Carousel>
             </Card>
           </GridItem>

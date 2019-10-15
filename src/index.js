@@ -12,10 +12,10 @@ import LandingPage from 'views/LandingPage/LandingPage.js';
 import ProfilePage from 'views/ProfilePage/ProfilePage.js';
 import LoginPage from 'views/LoginPage/LoginPage.js';
 import Footer from 'components/Footer/OldFooter.js';
-import Archive from 'views/Archive/Archive.js';
+import Stories from 'views/Archive/Archive.js';
 import Team from 'views/Team/Team.js';
-import Stories from 'views/Stories/Stories.js';
-
+import Issues from 'views/Stories/Stories.js';
+import MobileFooter from 'views/Components/MobileFooter.js';
 var hist = createBrowserHistory();
 
 ReactDOM.render(
@@ -25,11 +25,12 @@ ReactDOM.render(
       <Route path="/profile-page" component={ProfilePage} />
       <Route path="/login-page" component={LoginPage} /> */}
       <Route path='/' component={Navbar} />
-      <Route path='/archive' component={Archive} />
-      <Route path='/team' component={Team} />
       <Route path='/stories' component={Stories} />
+      <Route path='/team' component={Team} />
+      <Route path='/issues' component={Issues} />
       <Route exact path='/' component={Components} />
       <Route path='/' component={Footer} />
+      <Route path='/' component={MobileFooter} />
     </div>
   </Router>,
   document.getElementById('root')

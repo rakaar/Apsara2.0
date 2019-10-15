@@ -1,5 +1,4 @@
 import React, { useState, Fragment } from 'react';
-import { AnimateOnChange } from 'react-animation';
 // nodejs library that concatenates classes
 import classNames from 'classnames';
 // react components for routing our app without refresh
@@ -10,6 +9,7 @@ import { makeStyles } from '@material-ui/core/styles';
 // core components
 import Header from 'components/Header/Header.js';
 import Footer from 'components/Footer/OldFooter.js';
+import MobileFooter from 'components/Footer/Footer.js';
 import GridContainer from 'components/Grid/GridContainer.js';
 import GridItem from 'components/Grid/GridItem.js';
 import Button from 'components/CustomButtons/Button.js';
@@ -30,12 +30,26 @@ import SectionExamples from './Sections/SectionExamples.js';
 import SectionDownload from './Sections/SectionDownload.js';
 import CustomInput from 'components/CustomInput/CustomInput.js';
 
-import styles from 'assets/jss/material-kit-react/views/components.js';
+// installed npm libraries
+import validator from 'email-validator';
+import { AnimateOnChange } from 'react-animation';
 
+// import image
+import DroneImg from 'assets/img/Drone.jpg';
+
+import config from '../../config';
+import integrate from '../../integrate';
+
+import styles from 'assets/jss/material-kit-react/views/components.js';
+import './Footer.scss';
+import './Components.scss';
 const useStyles = makeStyles(styles);
+
+const subscribeEndpoint = config.endpoints.subscribe;
 
 export default function Components(props) {
   const [isNotSub, setIsNotSub] = useState(true);
+  const [showMailErr, setShowMailErr] = useState(false);
   const classes = useStyles();
   const { ...rest } = props;
   const logo = (
@@ -46,8 +60,20 @@ export default function Components(props) {
       className='logo'
     />
   );
+
+  const errMsg = <a style={{ color: 'red' }}>Please enter a valid email !</a>;
+  const textInput = React.createRef();
+
+  const handleSmash = () => {
+    const inputMail = textInput.current.value;
+    if (validator.validate(inputMail)) {
+      setIsNotSub(false);
+      integrate.postData(subscribeEndpoint, { email: inputMail });
+    } else setShowMailErr(true);
+  };
+
   return (
-    <div>
+    <div className='landing-page'>
       {/* <Header
         rightLinks={<HeaderLinks />}
         fixed
@@ -59,7 +85,7 @@ export default function Components(props) {
         {...rest}
       /> */}
       {/*here in parallax a background image can be placed with image={require('assets/img/bg4.jpg')} */}
-      <Parallax>
+      <Fragment>
         <div className={classes.container}>
           <AnimateOnChange>
             {isNotSub ? (
@@ -74,21 +100,27 @@ export default function Components(props) {
                       Get Updated with latest research and tech stories from the
                       PAN IIT Ecosystem, for free!
                     </h3>
-                    <CustomInput labelText='Your Mail' id='float' focussed />
+                    <CustomInput
+                      labelText='Your Mail'
+                      id='float'
+                      inputProps={{ inputRef: textInput }}
+                      focussed
+                    />
                   </div>
                   <Button
                     type='button'
-                    color='success'
+                    color='info'
                     round
-                    onClick={() => setIsNotSub(false)}
+                    onClick={handleSmash}
                   >
                     Smash
                   </Button>
                 </GridItem>
+                {showMailErr ? errMsg : ''}
               </GridContainer>
             ) : (
               <Fragment>
-                <h1 className={classes.title}>Welcome to the tech world</h1>
+                <h1 className={classes.subTitle}>Welcome to the tech world</h1>
                 <h3 className={classes.subtitle}>
                   Watch out for weekly dose of the tech gospel every Sunday
                   morning!
@@ -101,8 +133,32 @@ export default function Components(props) {
               </Fragment>
             )}
           </AnimateOnChange>
+          <img
+            className='drone'
+            style={{
+              width: '40%',
+              position: 'absolute',
+              right: '0'
+            }}
+            src={DroneImg}
+            alt='Drone carrying a mobile'
+          />
         </div>
-      </Parallax>
+      </Fragment>
+      <br />
+      <h2
+        className='carousel-title'
+        style={{
+          fontWeight: '400',
+          letterSpacing: '1px'
+        }}
+      >
+        Our Readers Speak...
+      </h2>
+      <SectionCarousel />
+      {/* <div className='mobile-footer'>
+        <MobileFooter />
+      </div> */}
 
       {/* <div className={classNames(classes.main, classes.mainRaised)}>
         <SectionBasics />
@@ -125,7 +181,7 @@ export default function Components(props) {
         <SectionExamples />
         <SectionDownload />
       </div>*/}
-      {/* <Footer /> */}
+      {/* */}
     </div>
   );
 }

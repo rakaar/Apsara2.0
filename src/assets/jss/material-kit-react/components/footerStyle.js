@@ -42,12 +42,14 @@ const footerStyle = {
   list: {
     marginBottom: '0',
     padding: '0',
-    marginTop: '0'
+    marginTop: '0',
+    marginLeft: '90px'
   },
   inlineBlock: {
     display: 'inline-block',
     padding: '0px',
-    width: 'auto'
+    width: 'auto',
+    margin: '5px'
   },
   icon: {
     width: '18px',

@@ -6,6 +6,8 @@ import Card from 'components/Card/Card.js';
 import CardBody from 'components/Card/CardBody.js';
 import Button from 'components/CustomButtons/Button.js';
 
+import './StoriesCard.scss';
+
 import imagesStyles from 'assets/jss/material-kit-react/imagesStyles.js';
 
 import { cardTitle } from 'assets/jss/material-kit-react.js';
@@ -17,16 +19,36 @@ const styles = {
 
 const useStyles = makeStyles(styles);
 
-export default function Cards() {
+export default function Cards(props) {
   const classes = useStyles();
+
+  const parseMonthName = str => {
+    let monthName = str.slice(6, 11);
+    monthName = monthName.toUpperCase();
+    return monthName;
+  };
   return (
-    <Card style={{ width: '20rem' }} className='card'>
+    <Card style={{ width: '20rem', margin: '40px' }} className='card'>
       <img
-        style={{ height: '350px', width: '100%', display: 'block' }}
+        style={{
+          height: '360px',
+          width: '100%',
+          display: 'block'
+        }}
         className={classes.imgCardTop}
-        src='...'
+        src={props.cover_link}
         alt='Card-img-cap'
       />
+      <CardBody>
+        <div className='issue-data'>
+          <span className='date'>
+            {parseMonthName(props.month)} {props.year}
+          </span>
+          <a href={props.link} className='download'>
+            download
+          </a>
+        </div>
+      </CardBody>
       {/* <CardBody>
         <h4 className={classes.cardTitle}>Card title</h4>
         <p>

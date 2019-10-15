@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACT,gBAAgB,EAAE,OAAO;CAC1B;;AAED,AAAA,KAAK,CAAC;EACJ,WAAW,EAAE,GAAG;EAChB,cAAc,EAAE,SAAS;EACzB,cAAc,EAAE,GAAG;CACpB",
+    "sources": [
+        "TeamMemberCard.scss"
+    ],
+    "names": [],
+    "file": "TeamMemberCard.css"
+}
