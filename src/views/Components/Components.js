@@ -121,6 +121,7 @@ export default function Components(props) {
             ) : (
               <Fragment>
                 <h1 className={classes.subTitle}>Welcome to the tech world</h1>
+                <br/>
                 <h3 className={classes.subtitle}>
                   Watch out for weekly dose of the tech gospel every Sunday
                   morning!
@@ -128,7 +129,7 @@ export default function Components(props) {
                 <br />
                 <h3 className={classes.subtitle}>
                   Can't Wait ?{' '}
-                  <a href='/archive'>Checkout the latest issue here</a>
+                  <a href='/stories'>Checkout our latest stories here!</a>
                 </h3>
               </Fragment>
             )}

@@ -39,7 +39,7 @@ export default function Footer(props) {
               >
                 Creative Tim
               </a> */}
-              <a href='https://www.facebook.com/iit.tech.ambit/?epa=SEARCH_BOX'>
+              <a href='https://www.facebook.com/iit.tech.ambit/' target="_blank">
                 <i class='fa fa-facebook-official fa-2x' aria-hidden='true'></i>
               </a>
             </ListItem>
@@ -51,7 +51,7 @@ export default function Footer(props) {
               >
                 About us
               </a> */}
-              <a href='https://medium.com/iit-technology-ambit'>
+              <a href='https://medium.com/iit-technology-ambit' target="_blank">
                 <i class='fa fa-medium fa-2x' aria-hidden='true'></i>
               </a>
             </ListItem>
@@ -63,7 +63,7 @@ export default function Footer(props) {
               >
                 Blog
               </a> */}
-              <a href='#'>
+              <a href='https://www.instagram.com/iit_techambit/' target="_blank">
                 <i class='fa fa-instagram fa-2x' aria-hidden='true'></i>
               </a>
             </ListItem>
@@ -75,7 +75,7 @@ export default function Footer(props) {
               >
                 Licenses
               </a> */}
-              <a href='https://github.com/iit-technology-ambit/'>
+              <a href='https://github.com/iit-technology-ambit/' target="_blank">
                 <i class='fa fa-github-square fa-2x' aria-hidden='false' />
               </a>
             </ListItem>
