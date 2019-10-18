@@ -25,6 +25,11 @@ const TeamList = [
     role: 'Editorial Head'
   },
   {
+    img: images['Unnikrishnan.jpg'],
+    name: 'Unnikrishnan Nambiar',
+    role: 'Finance Head'
+  },
+  {
     img: images['Shail.jpg'],
     name: 'Daswani Shail Manoj',
     role: 'Editorial Team'
@@ -44,16 +49,16 @@ const TeamList = [
     name: 'Koushiki Dasgupta Chaudhuri',
     role: 'Editorial Team'
   },
-    {
-      img: images['Archi.jpg'],
-      name: 'Archi Banerjee',
-      role: 'Editorial Team'
-    },
-    {
-      img: images['Shikhar.jpg'],
-      name: 'Shikhar Mohan',
-      role: 'Editorial Team'
-    },
+  {
+    img: images['Archi.jpg'],
+    name: 'Archi Banerjee',
+    role: 'Editorial Team'
+  },
+  {
+    img: images['Shikhar.jpg'],
+    name: 'Shikhar Mohan',
+    role: 'Editorial Team'
+  },
   {
     img: images['Shaurya.jpg'],
     name: 'Shaurya Shrivastava',
@@ -64,11 +69,11 @@ const TeamList = [
     name: 'Aritra Biswas',
     role: 'Editorial Team'
   },
-    {
-      img: images['Jasmine.jpg'],
-      name: 'Jasmine Jerry A',
-      role: 'Editorial Team'
-    },
+  {
+    img: images['Jasmine.jpg'],
+    name: 'Jasmine Jerry A',
+    role: 'Editorial Team'
+  },
 
   {
     img: images['Aastha.jpg'],
@@ -90,11 +95,11 @@ const TeamList = [
     name: 'Kartik Tyagi',
     role: 'Product Team'
   },
-    {
-      img: images['Haveen.jpg'],
-      name: 'Haveen Hrithic TL',
-      role: 'Product Team'
-    },
+  {
+    img: images['Haveen.jpg'],
+    name: 'Haveen Hrithic TL',
+    role: 'Product Team'
+  },
   {
     img: images['Shubham.jpg'],
     name: 'Shubham Mishra',
@@ -118,4 +123,3 @@ const TeamList = [
 ];
 
 export default TeamList;
-
