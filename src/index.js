@@ -30,7 +30,6 @@ ReactDOM.render(
       <Route path='/issues' component={Issues} />
       <Route exact path='/' component={Components} />
       <Route path='/' component={Footer} />
-      <Route path='/' component={MobileFooter} />
     </div>
   </Router>,
   document.getElementById('root')

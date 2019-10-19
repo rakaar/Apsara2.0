@@ -100,8 +100,9 @@
 
 @media only screen and (max-width: 968px) {
   .footer-w {
+    height: max-content !important;
     overflow-x: hidden !important;
-    display: none;
+    overflow-y: scroll !important;
   }
   .cs-f {
     background: #f9f9f9 !important;
@@ -112,6 +113,28 @@
       line-height: 1em;
     }
   }
+
+  .cs-f{
+    background: #fff !important;
+    font-weight:600 !important;
+  }
+
+  .lft{
+    margin: 0 !important;
+    visibility: hidden !important;
+  }
+
+  .fg-w{
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .mg-f{
+    margin: 2em 0 !important;
+  }
+  .rg-f{
+    margin-bottom: -60px !important;
+  }
+
 }
 
 .footer-links {
