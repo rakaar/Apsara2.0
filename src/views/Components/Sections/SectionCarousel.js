@@ -56,7 +56,7 @@ export default function SectionCarousel() {
                             left: '50%',
                             right: '50%',
                             transform: 'translateX(-50%)',
-                            borderRadius: '4%'
+                            borderRadius: '100%'
                           }}
                           src={item.img}
                           alt='...'
