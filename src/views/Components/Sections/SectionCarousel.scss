@@ -16,6 +16,14 @@
 //   }
 // }
 
+#nameWithSt{
+  padding: 0 2em;
+  #name{
+    font-weight: 800;
+    font-size: 2.1em !important;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   #test-image {

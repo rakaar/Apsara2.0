@@ -1,5 +1,6 @@
 .other-data {
   margin-top: 0;
+  float: right;
   span{
     font-size: 0.9em;
     line-height: 1.1em;
@@ -24,8 +25,9 @@
   display: flex;
   align-content: center;
   align-items: center;
+  flex-wrap: wrap;
   flex-direction: row-reverse;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .min-read {
