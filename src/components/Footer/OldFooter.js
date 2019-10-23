@@ -51,7 +51,7 @@ export default class Footer extends Component {
             <a href='https://medium.com/iit-technology-ambit'>
               <i class='fa fa-medium fa-3x' aria-hidden='true'></i>
             </a>
-            <a href='#'>
+            <a href='https://www.instagram.com/iit_techambit/'>
               <i class='fa fa-instagram fa-3x' aria-hidden='true'></i>
             </a>
             <a href='https://github.com/iit-technology-ambit/'>
