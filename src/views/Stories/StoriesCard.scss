@@ -2,24 +2,30 @@
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .date {
-  color: #3e9fef;
-  font-weight: 1000;
+  color: #666;
+  font-weight: 600;
+  font-size: 1.1em;
 }
 
 .download {
-  color: #738a94;
-  font-weight: 500;
+  box-sizing: border-box;
+  color: #444;
+  background: #eee;
+  font-weight: 800;
+  font-size: 1.1em;
   text-transform: uppercase;
   letter-spacing: 1px;
+  padding: 8px 15px;
+  border-radius: 6px;
   cursor: pointer;
   display: inline-block;
 }
 
 .download:hover {
-  background-color: #e6e6e6;
-  transform: scale(1.2);
+  background-color: #eef;
   transition: all 0.5s;
 }
