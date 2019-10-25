@@ -85,37 +85,43 @@ export default function Components(props) {
         {...rest}
       /> */}
       {/*here in parallax a background image can be placed with image={require('assets/img/bg4.jpg')} */}
-      <Fragment>
+      <div className='drone-sub'>
+      <Fragment >
         <div className={`${classes.container} landing-cont-custom`}>
           <AnimateOnChange>
             {isNotSub ? (
               <GridContainer>
                 <GridItem>
                   <div className={classes.brand}>
-                    <h1 className={`${classes.title} landing-logo`}>{logo}</h1>
+                    {/* <h1 className={`${classes.title} landing-logo`}>{logo}</h1> */}
                     <h3 className={`${classes.subContTitle} landing-subcontent`}>
-                      Become tech savy in just 5 minutes
+                      Become tech savv                                                                                y in just 5 minutes
                     </h3>
                     <h3 className={`${classes.subtitle} landing-subtitle`}>
                       Get Updated with latest research and tech stories from the
                       PAN IIT Ecosystem, for free!
                     </h3>
-                    <CustomInput
+                    {/* <CustomInput
                       labelText='Your Mail'
                       id='float'
                       inputProps={{ inputRef: textInput }}
                       focussed
-                    />
+                    /> */}
+                    {/*This form needs to be integrated and also made responsive tell then commment it out */}
+                    <form class="example" >
+                      <input type="text" placeholder="enter email" name="email" />
+                      <button type="submit">Try it</button>
+                  </form>
                   </div>
-                  <Button
+                  {/* <Button
                   className="smash-btn"
                     type='button'
                     color='info'
                     round
                     onClick={handleSmash}
-                  >
-                    Smash
-                  </Button>
+                  > */}
+                    {/* Smash
+                  </Button> */}
                 </GridItem>
                 {showMailErr ? errMsg : ''}
               </GridContainer>
@@ -147,6 +153,7 @@ export default function Components(props) {
           />
         </div>
       </Fragment>
+      </div>
       <br />
       <h2
         className='carousel-title'
