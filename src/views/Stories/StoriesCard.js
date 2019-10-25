@@ -28,10 +28,10 @@ export default function Cards(props) {
     return monthName;
   };
   return (
-    <Card style={{ width: '20rem', margin: '40px' }} className='card'>
+    <Card style={{ width: '22rem', margin: '40px 25px' }} className='card'>
       <img
         style={{
-          height: '360px',
+          height: '440px',
           width: '100%',
           display: 'block'
         }}

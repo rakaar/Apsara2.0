@@ -1,12 +1,33 @@
 .other-data {
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-between;
+  margin-top: 0;
+  float: right;
+  span{
+    font-size: 0.9em;
+    line-height: 1.1em;
+    margin:0 0.9em 0 0;
+  }
 }
 
 .date {
   color: #3e9fef;
   font-weight: 1000;
+}
+
+.custom-button-style{
+  font-size: 1em !important;
+  float: right;
+  clear: both;
+  padding: 0.6em 1em !important;
+  border-radius: 16px !important;
+}
+
+.flex-cont{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: space-between;
 }
 
 .min-read {
@@ -22,4 +43,18 @@
 }
 .card:hover {
   box-shadow: 20px 20px 40px 0px rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+
+  .other-data {
+    margin-top: 0;
+    span{
+      display: block;
+      font-size: 0.9em;
+      line-height: 1.1em;
+    }
+  }
+
 }

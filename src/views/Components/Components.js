@@ -86,17 +86,17 @@ export default function Components(props) {
       /> */}
       {/*here in parallax a background image can be placed with image={require('assets/img/bg4.jpg')} */}
       <Fragment>
-        <div className={classes.container}>
+        <div className={`${classes.container} landing-cont-custom`}>
           <AnimateOnChange>
             {isNotSub ? (
               <GridContainer>
                 <GridItem>
                   <div className={classes.brand}>
-                    <h1 className={classes.title}>{logo}</h1>
-                    <h3 className={classes.subContTitle}>
+                    <h1 className={`${classes.title} landing-logo`}>{logo}</h1>
+                    <h3 className={`${classes.subContTitle} landing-subcontent`}>
                       Become tech savy in just 5 minutes
                     </h3>
-                    <h3 className={classes.subtitle}>
+                    <h3 className={`${classes.subtitle} landing-subtitle`}>
                       Get Updated with latest research and tech stories from the
                       PAN IIT Ecosystem, for free!
                     </h3>
@@ -108,6 +108,7 @@ export default function Components(props) {
                     />
                   </div>
                   <Button
+                  className="smash-btn"
                     type='button'
                     color='info'
                     round
@@ -120,16 +121,16 @@ export default function Components(props) {
               </GridContainer>
             ) : (
               <Fragment>
-                <h1 className={classes.subTitle}>Welcome to the tech world</h1>
+                <h1 className={`${classes.subTitle} landing-subtitle-after`}>Welcome to the tech world</h1>
                 <br/>
-                <h3 className={classes.subtitle}>
+                <h3 className={`${classes.subtitle} landing-subtitle2-after`}>
                   Watch out for weekly dose of the tech gospel every Sunday
                   morning!
                 </h3>
                 <br />
-                <h3 className={classes.subtitle}>
+                <h3 className={`${classes.subtitle} landing-subtitle2-after`}>
                   Can't Wait ?{' '}
-                  <a href='/stories'>Checkout our latest stories here!</a>
+                  <a href='/stories'>Check out our latest stories here!</a>
                 </h3>
               </Fragment>
             )}
