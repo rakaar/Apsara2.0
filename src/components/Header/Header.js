@@ -16,6 +16,7 @@ import Drawer from '@material-ui/core/Drawer';
 import Menu from '@material-ui/icons/Menu';
 // core components
 import styles from 'assets/jss/material-kit-react/components/headerStyle.js';
+import './Header.scss';
 
 const useStyles = makeStyles(styles);
 
@@ -65,9 +66,10 @@ export default function Header(props) {
     <Link to='/'>
       <img
         style={{ width: '25%' }}
-        alt='IIT Tech Ambit Logo'
+       alt='IIT Tech Ambit Logo'
         src='https://cdn.iit-techambit.in/websiteAssets/logo.png'
         className='logo'
+        id='logo'
       />
     </Link>
   );

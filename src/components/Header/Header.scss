@@ -1,0 +1,24 @@
+#logo {
+    margin-left: -80%;
+
+
+}
+
+@media only screen and (min-width: 768px) {
+  /* For mobile phones: */
+    #header-links {
+    position: relative;
+    right: -85%
+    }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+
+  #logo {
+      margin-left: -30%;
+  }
+}
+

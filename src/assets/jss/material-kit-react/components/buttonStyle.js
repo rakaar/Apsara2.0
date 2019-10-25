@@ -23,7 +23,7 @@ const buttonStyle = {
     margin: '.3125rem 1px',
     fontSize: '18px',
     fontWeight: '600',
-    textTransform: 'uppercase',
+    // textTransform: 'uppercase',
     letterSpacing: '2px',
     willChange: 'box-shadow, transform',
     transition:
