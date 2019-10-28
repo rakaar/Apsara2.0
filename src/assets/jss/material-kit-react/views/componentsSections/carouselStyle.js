@@ -25,10 +25,7 @@ const carouselStyle = {
     justifyContent: 'center'
   },
   nameWithSt: {
-    // marginLeft: '45%',
-    // marginTop: '0%',
-    // marginBottom: '0%',
-    // marginRight: '20%'
+    marginTop: '-4%',
     textAlign: 'center'
   },
   bgCol: {

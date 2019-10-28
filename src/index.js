@@ -27,7 +27,7 @@ ReactDOM.render(
       <Route path='/' component={Navbar} />
       <Route path='/stories' component={Stories} />
       <Route path='/team' component={Team} />
-      <Route path='/issues' component={Issues} />
+      <Route path='/archive' component={Issues} />
       <Route exact path='/' component={Components} />
       <Route path='/' component={Footer} />
     </div>

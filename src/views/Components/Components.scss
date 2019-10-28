@@ -12,11 +12,13 @@
 
 .landing-cont-custom {
   padding-right: 32em !important;
+  padding-top: 2em;
+  padding-bottom: 130px;
 }
 
 .landing-subtitle {
   margin-top: 30px !important;
-  font-size: 1.1em !important;
+  font-size: 1.3em !important;
   font-weight: 500 !important;
   color: #767676 !important;
   margin-bottom: 20px !important;
@@ -58,7 +60,7 @@
 .landing-subcontent {
   color: #2196f3 !important;
   font-weight: 900 !important;
-  font-size: 4.5em !important;
+  font-size: 5em !important;
   z-index: 99 !important;
   line-height: 1em !important;
 }
@@ -71,6 +73,9 @@
 
 .form {
   display: flex;
+  input::placeholder {
+    font-family: 'Montserrat', sans-serif !important;
+  }
 }
 
 .form input[type='text'] {

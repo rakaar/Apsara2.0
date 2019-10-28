@@ -8,8 +8,8 @@
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
-
-  #logo {
-    margin-left: -30%;
+  .logo {
+    position: relative;
+    left: 50%;
   }
 }

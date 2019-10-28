@@ -1,24 +1,29 @@
-// @media only screen and (max-width: 768px) {
-//   /* For mobile phones: */
-//   #name-testimonials {
-//     width: 35% !important;
-//     margin-bottom: -4%;
-//   }
-//   #nameWithSt {
-//     margin-top: -36%;
-//     margin-left: 41%;
-//   }
-//   #name {
-//     font-size: 20px;
-//   }
-//   #test {
-//     font-size: 18px;
-//   }
-// }
+#quotation:before {
+  content: open-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  left: -10px;
+  position: relative;
+  top: 30px;
+  color: #000;
+  font-size: 3em;
+}
+#quotation::after {
+  content: close-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  left: 10px;
+  position: relative;
+  top: 35px;
+  color: #000;
+  font-size: 3em;
+}
 
-#nameWithSt{
+#nameWithSt {
   padding: 0 2em;
-  #name{
+  #name {
     font-weight: 800;
     font-size: 2.1em !important;
   }

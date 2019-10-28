@@ -68,13 +68,24 @@ export default function SectionCarousel() {
                         />
                       </Box>
                       <Box p={1} m={1}>
-                        <div className={classes.nameWithSt} id='nameWithSt'>
+                        {/* <div className={classes.nameWithSt} id='nameWithSt'>
                           <h3 className={classes.testimonial} id='name'>
                             {item.test}
                           </h3>
                           <h4 className={classes.name} id='test'>
                             <em>{item.who}</em>
                           </h4>
+                        </div> */}
+                        <div className={classes.nameWithSt}>
+                          <h3 c lassName={classes.name}>
+                            {item.who}
+                          </h3>
+                          <h4>
+                            <em>{item.what}</em>
+                          </h4>
+                          <h3 className={classes.testimonial} id='quotation'>
+                            {item.test}
+                          </h3>
                         </div>
                       </Box>
                     </Box>

@@ -97,7 +97,7 @@ export default function Components(props) {
                       <h3
                         className={`${classes.subContTitle} landing-subcontent`}
                       >
-                        Become tech savv y in just 5 minutes
+                        Become tech savvy in just 5 minutes
                       </h3>
                       <h3 className={`${classes.subtitle} landing-subtitle`}>
                         Get Updated with latest research and tech stories from
