@@ -68,13 +68,16 @@
   margin-top: 7%;
   margin-bottom: -4%;
 }
+
+.form {
+  display: flex;
+}
+
 .form input[type='text'] {
   padding: 20px;
   font-size: 17px;
   border: 1px solid #ffffff;
-  float: left;
   width: 80%;
-
   border-radius: 100px 0px 0px 100px;
   box-shadow: 0 0 2.188em rgba(50, 50, 93, 0.1),
     0 0.313em 0.938em rgba(0, 0, 0, 0.07);
@@ -82,7 +85,6 @@
 
 .form button {
   padding: 20px;
-  float: left;
   width: 20%;
   background: #2196f3;
   color: white;

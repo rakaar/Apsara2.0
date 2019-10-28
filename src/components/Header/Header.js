@@ -63,13 +63,11 @@ export default function Header(props) {
     [classes.fixed]: fixed
   });
   const logo = (
-    <Link to='/'>
+    <Link to='/' className='logo'>
       <img
-        style={{ width: '25%' }}
-       alt='IIT Tech Ambit Logo'
+        style={{ height: '50px' }}
+        alt='IIT Tech Ambit Logo'
         src='https://cdn.iit-techambit.in/websiteAssets/logo.png'
-        className='logo'
-        id='logo'
       />
     </Link>
   );
