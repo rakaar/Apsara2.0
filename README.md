@@ -36,8 +36,9 @@ Second version of iit-techambit frontend.
 Note that the `master` branch is deployed to server through [Midgard](https://midgard.iit-techambit.in). Any commits pushed to `master` will be deployed to server instantly
 
 A manual deployment can be triggered by going to the midgard dashboard.
- 
+
 ## Documentation
+
 The documentation for the Material Kit React is hosted at our [website](https://demos.creative-tim.com/material-kit-react/#/documentation/tutorial).
 
 ## Configuration - Settings.json in VS Code
