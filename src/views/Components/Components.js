@@ -86,34 +86,43 @@ export default function Components(props) {
       /> */}
       {/*here in parallax a background image can be placed with image={require('assets/img/bg4.jpg')} */}
       <div className='drone-sub'>
-      <Fragment >
-        <div className={`${classes.container} landing-cont-custom`}>
-          <AnimateOnChange>
-            {isNotSub ? (
-              <GridContainer>
-                <GridItem>
-                  <div className={classes.brand}>
-                    {/* <h1 className={`${classes.title} landing-logo`}>{logo}</h1> */}
-                    <h3 className={`${classes.subContTitle} landing-subcontent`}>
-                      Become tech savv                                                                                y in just 5 minutes
-                    </h3>
-                    <h3 className={`${classes.subtitle} landing-subtitle`}>
-                      Get Updated with latest research and tech stories from the
-                      PAN IIT Ecosystem, for free!
-                    </h3>
-                    {/* <CustomInput
+        <Fragment>
+          <div className={`${classes.container} landing-cont-custom`}>
+            <AnimateOnChange>
+              {isNotSub ? (
+                <GridContainer>
+                  <GridItem>
+                    <div className={classes.brand}>
+                      {/* <h1 className={`${classes.title} landing-logo`}>{logo}</h1> */}
+                      <h3
+                        className={`${classes.subContTitle} landing-subcontent`}
+                      >
+                        Become tech savv y in just 5 minutes
+                      </h3>
+                      <h3 className={`${classes.subtitle} landing-subtitle`}>
+                        Get Updated with latest research and tech stories from
+                        the PAN IIT Ecosystem, for free!
+                      </h3>
+                      {/* <CustomInput
                       labelText='Your Mail'
                       id='float'
                       inputProps={{ inputRef: textInput }}
                       focussed
                     /> */}
-                    {/*This form needs to be integrated and also made responsive tell then commment it out */}
-                    <form class="example" >
-                      <input type="text" placeholder="enter email" name="email" />
-                      <button type="submit">Try it</button>
-                  </form>
-                  </div>
-                  {/* <Button
+                      {/*This form needs to be integrated and also made responsive tell then commment it out */}
+                      <div className='form'>
+                        <input
+                          type='text'
+                          placeholder='enter email'
+                          name='email'
+                          ref={textInput}
+                        />
+                        <button type='submit' onClick={handleSmash}>
+                          Try it
+                        </button>
+                      </div>
+                    </div>
+                    {/* <Button
                   className="smash-btn"
                     type='button'
                     color='info'
@@ -122,37 +131,39 @@ export default function Components(props) {
                   > */}
                     {/* Smash
                   </Button> */}
-                </GridItem>
-                {showMailErr ? errMsg : ''}
-              </GridContainer>
-            ) : (
-              <Fragment>
-                <h1 className={`${classes.subTitle} landing-subtitle-after`}>Welcome to the tech world</h1>
-                <br/>
-                <h3 className={`${classes.subtitle} landing-subtitle2-after`}>
-                  Watch out for weekly dose of the tech gospel every Sunday
-                  morning!
-                </h3>
-                <br />
-                <h3 className={`${classes.subtitle} landing-subtitle2-after`}>
-                  Can't Wait ?{' '}
-                  <a href='/stories'>Check out our latest stories here!</a>
-                </h3>
-              </Fragment>
-            )}
-          </AnimateOnChange>
-          <img
-            className='drone'
-            style={{
-              width: '40%',
-              position: 'absolute',
-              right: '0'
-            }}
-            src={DroneImg}
-            alt='Drone carrying a mobile'
-          />
-        </div>
-      </Fragment>
+                  </GridItem>
+                  {showMailErr ? errMsg : ''}
+                </GridContainer>
+              ) : (
+                <Fragment>
+                  <h1 className={`${classes.subTitle} landing-subtitle-after`}>
+                    Welcome to the tech world
+                  </h1>
+                  <br />
+                  <h3 className={`${classes.subtitle} landing-subtitle2-after`}>
+                    Watch out for weekly dose of the tech gospel every Sunday
+                    morning!
+                  </h3>
+                  <br />
+                  <h3 className={`${classes.subtitle} landing-subtitle2-after`}>
+                    Can't Wait ?{' '}
+                    <a href='/stories'>Check out our latest stories here!</a>
+                  </h3>
+                </Fragment>
+              )}
+            </AnimateOnChange>
+            <img
+              className='drone'
+              style={{
+                width: '40%',
+                position: 'absolute',
+                right: '0'
+              }}
+              src={DroneImg}
+              alt='Drone carrying a mobile'
+            />
+          </div>
+        </Fragment>
       </div>
       <br />
       <h2
