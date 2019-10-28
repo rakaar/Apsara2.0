@@ -111,6 +111,11 @@ const TeamList = [
     role: 'Technical Team'
   },
   {
+    img: images['Ajay.jpg'],
+    name: 'Ajay Yadav',
+    role: 'Technical Team'
+  },
+  {
     img: images['Raghavendra.jpg'],
     name: 'Raghavendra kaushik',
     role: 'Technical Team'
