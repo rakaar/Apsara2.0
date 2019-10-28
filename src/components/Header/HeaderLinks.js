@@ -19,13 +19,14 @@ import CustomDropdown from 'components/CustomDropdown/CustomDropdown.js';
 import Button from 'components/CustomButtons/Button.js';
 
 import styles from 'assets/jss/material-kit-react/components/headerLinksStyle.js';
+import './Header.scss';
 
 const useStyles = makeStyles(styles);
 
 export default function HeaderLinks(props) {
   const classes = useStyles();
   return (
-    <List className={classes.list}>
+    <List className={classes.list} id='header-links'>
       <ListItem className={classes.listItem}>
         {/* <CustomDropdown
           noLiPadding
@@ -48,25 +49,25 @@ export default function HeaderLinks(props) {
             </a>
           ]}
         /> */}
-        <Button color='transparent' target='_blank' className={classes.navLink}>
+        <h1 color='transparent' target='_blank' className={classes.navLink}>
           <Link to='/stories' style={{ color: '#555555' }}>
             Stories
           </Link>
-        </Button>
+        </h1>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Button color='transparent' target='_blank' className={classes.navLink}>
-          <Link to='/issues' style={{ color: '#555555' }}>
-            Issues
+        <h1 color='transparent' target='_blank' className={classes.navLink}>
+          <Link to='/archive' style={{ color: '#555555' }}>
+            Archive
           </Link>
-        </Button>
+        </h1>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Button color='transparent' target='_blank' className={classes.navLink}>
+        <h1 color='transparent' target='_blank' className={classes.navLink}>
           <Link to='/team' style={{ color: '#555555' }}>
             Team
           </Link>
-        </Button>
+        </h1>
       </ListItem>
       {/* <ListItem className={classes.listItem}> */}
       {/*<Tooltip title="Delete">

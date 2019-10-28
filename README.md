@@ -1,8 +1,37 @@
-# Apsara 2.0
+# Apsara2.0
 
-This is the frontend for [iit-techambit.in](https://iit-techambit.in)
+Second version of iit-techambit frontend.
 
-# Deployment
+# Set up:
+
+#### Installation
+
+`npm install`
+
+#### Running on localhost
+
+`npm start`
+
+**NOTE: Please use only npm as package manager not any other to avoid dependency clashes**
+
+# To Contribute
+
+- We do not commit to `master` branch directly. We open pull requests and merge them in master after review.
+- Create the issue as necessary.
+- If you lack the technical knowhow, feel free ask in the slack workspace.
+- Create a Branch and Commit your changes.
+  - Name the branch carefully. For example `feature-card-component`, `bugfix-overlay`. Do not use generic names such as `develop`, `work`, your username etc.
+  - Name the commits meaningfully. For help read [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/).
+- Check if the solution works by testing it locally.
+- Submit a PR with an appropriate name including the term `Fixes #{issue number}` if it fixes that particular issue.
+- Be attentive and respond to comments and suggestions in the opened PR.
+- We will merge your PR after reviewing and testing it.
+
+# While contributing
+
+- Use **prettier** extension for code linting
+
+## Deployment
 
 Note that the `master` branch is deployed to server through [Midgard](https://midgard.iit-techambit.in). Any commits pushed to `master` will be deployed to server instantly
 
@@ -11,128 +40,23 @@ A manual deployment can be triggered by going to the midgard dashboard.
 ## Documentation
 The documentation for the Material Kit React is hosted at our [website](https://demos.creative-tim.com/material-kit-react/#/documentation/tutorial).
 
+## Configuration - Settings.json in VS Code
 
-## File Structure
-Within the download you'll find the following directories and files:
+```json
+{
+  "files.trimTrailingWhitespace": true,
+  "editor.formatOnSave": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleQuote": true
+}
+```
 
-```
-material-kit-react
-.
-├── CHANGELOG.md
-├── ISSUE_TEMPLATE.md
-├── LICENSE.md
-├── README.md
-├── bower.json
-├── gulpfile.js
-├── jsconfig.json
-├── package.json
-├── Documentation
-│   ├── assets
-│   │   ├── css
-│   │   ├── img
-│   │   │   └── faces
-│   │   └── js
-│   └── tutorial-components.html
-├── public
-│   ├── favicon.ico
-│   ├── index.html
-│   └── manifest.json
-└── src
-    ├── index.js
-    ├── logo.svg
-    ├── assets
-    │   ├── css
-    │   │   └── material-kit-react.css.map
-    │   ├── img
-    │   │   ├── examples
-    │   │   └── faces
-    │   ├── jss
-    │   │   ├── material-kit-react
-    │   │   │   ├── components
-    │   │   │   └── views
-    │   │   │       ├── componentsSections
-    │   │   │       ├── landingPageSections
-    │   │   └── material-kit-react.js
-    │   └── scss
-    │       ├── core
-    │       │   ├── mixins
-    │       │   └── variables
-    │       ├── plugins
-    │       └── material-kit-react.scss
-    ├── components
-    │   ├── Badge
-    │   │   └── Badge.js
-    │   ├── Card
-    │   │   ├── Card.js
-    │   │   ├── CardBody.js
-    │   │   ├── CardFooter.js
-    │   │   └── CardHeader.js
-    │   ├── Clearfix
-    │   │   └── Clearfix.js
-    │   ├── CustomButtons
-    │   │   └── Button.js
-    │   ├── CustomDropdown
-    │   │   └── CustomDropdown.js
-    │   ├── CustomInput
-    │   │   └── CustomInput.js
-    │   ├── CustomLinearProgress
-    │   │   └── CustomLinearProgress.js
-    │   ├── CustomTabs
-    │   │   └── CustomTabs.js
-    │   ├── Footer
-    │   │   └── Footer.js
-    │   ├── Grid
-    │   │   ├── GridContainer.js
-    │   │   └── GridItem.js
-    │   ├── Header
-    │   │   ├── Header.js
-    │   │   └── HeaderLinks.js
-    │   ├── InfoArea
-    │   │   └── InfoArea.js
-    │   ├── NavPills
-    │   │   └── NavPills.js
-    │   ├── Pagination
-    │   │   └── Pagination.js
-    │   ├── Parallax
-    │   │   └── Parallax.js
-    │   ├── Snackbar
-    │   │   └── SnackbarContent.js
-    │   └── Typography
-    │       ├── Danger.js
-    │       ├── Info.js
-    │       ├── Muted.js
-    │       ├── Primary.js
-    │       ├── Quote.js
-    │       ├── Small.js
-    │       ├── Success.js
-    │       └── Warning.js
-    └── views
-        ├── Components
-        │   ├── Components.js
-        │   └── Sections
-        │       ├── SectionBasics.js
-        │       ├── SectionCarousel.js
-        │       ├── SectionCompletedExamples.js
-        │       ├── SectionDownload.js
-        │       ├── SectionExamples.js
-        │       ├── SectionJavascript.js
-        │       ├── SectionLogin.js
-        │       ├── SectionNavbars.js
-        │       ├── SectionNotifications.js
-        │       ├── SectionPills.js
-        │       ├── SectionTabs.js
-        │       └── SectionTypography.js
-        ├── LandingPage
-        │   ├── LandingPage.js
-        │   └── Sections
-        │       ├── ProductSection.js
-        │       ├── TeamSection.js
-        │       └── WorkSection.js
-        ├── LoginPage
-        │   └── LoginPage.js
-        └── ProfilePage
-            └── ProfilePage.js
-```
+- Use Pascal case naming convention for naming files, variables meaningfully.
+- Usage of ES6 Features when compared to vanilla JS is highly recommended.
+
 ## Licensing
 
 - Copyright 2019 Creative Tim (https://www.creative-tim.com/)

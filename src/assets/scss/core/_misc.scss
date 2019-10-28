@@ -12,9 +12,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  // font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-weight: 300;
   line-height: 1.5em;
+   font-family: 'Montserrat', sans-serif !important;
 }
 h1,
 h2,
@@ -80,6 +81,8 @@ body {
   font-size: 1rem;
   text-align: left;
   overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif !important;
+
 }
 
 legend {

@@ -15,7 +15,7 @@ const popoverStyles = {
     textAlign: "start",
     textDecoration: "none",
     textShadow: "none",
-    textTransform: "none",
+    // textTransform: "none",
     letterSpacing: "normal",
     wordBreak: "normal",
     wordSpacing: "normal",

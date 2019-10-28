@@ -11,7 +11,10 @@ const headerLinksStyle = theme => ({
     listStyle: 'none',
     paddingTop: '0',
     paddingBottom: '0',
-    color: 'inherit'
+    color: 'inherit',
+    textTransform : 'none !important',
+
+
   },
   listItem: {
     float: 'left',
@@ -19,8 +22,9 @@ const headerLinksStyle = theme => ({
     position: 'relative',
     display: 'block',
     width: 'auto',
-    margin: '0',
+    margin: '2px',
     padding: '0',
+    textTransform: 'none !important',
     [theme.breakpoints.down('sm')]: {
       width: '100%',
       '&:after': {
@@ -34,7 +38,8 @@ const headerLinksStyle = theme => ({
     }
   },
   listItemText: {
-    padding: '0 !important'
+    padding: '0 !important',
+    textTransform: 'none !important',
   },
   navLink: {
     color: 'inherit',
@@ -42,7 +47,7 @@ const headerLinksStyle = theme => ({
     padding: '0.9375rem',
     fontWeight: '800',
     fontSize: '20px',
-    textTransform: 'uppercase',
+    // textTransform: 'uppercase',
     borderRadius: '3px',
     lineHeight: '20px',
     textDecoration: 'none',
@@ -54,6 +59,7 @@ const headerLinksStyle = theme => ({
     },
     [theme.breakpoints.down('sm')]: {
       width: 'calc(100% - 30px)',
+      textTransform: 'none !important',
       marginLeft: '15px',
       marginBottom: '8px',
       marginTop: '8px',
@@ -68,7 +74,8 @@ const headerLinksStyle = theme => ({
     padding: '0.9375rem',
     fontWeight: '400',
     fontSize: '12px',
-    textTransform: 'uppercase',
+    // textTransform: 'uppercase',
+    textTransform: 'none !important',
     lineHeight: '20px',
     textDecoration: 'none',
     margin: '0px',
@@ -80,7 +87,8 @@ const headerLinksStyle = theme => ({
     position: 'relative',
     fontWeight: '400',
     fontSize: '12px',
-    textTransform: 'uppercase',
+    // textTransform: 'uppercase',
+    textTransform: 'none !important',
     lineHeight: '20px',
     textDecoration: 'none',
     margin: '0px',
@@ -107,7 +115,8 @@ const headerLinksStyle = theme => ({
       display: 'block',
       padding: '10px 20px',
       fontWeight: '800',
-      fontSize: '20px'
+      fontSize: '20px',
+      textTransform: 'none !important',
     }
   },
   ...tooltip,

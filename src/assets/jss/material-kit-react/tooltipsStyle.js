@@ -16,7 +16,7 @@ const tooltipsStyle = {
     fontStyle: "normal",
     fontWeight: "400",
     textShadow: "none",
-    textTransform: "none",
+    // textTransform: "none",
     letterSpacing: "normal",
     wordBreak: "normal",
     wordSpacing: "normal",
