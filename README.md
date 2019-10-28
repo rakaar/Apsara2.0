@@ -31,7 +31,17 @@ Second version of iit-techambit frontend.
 
 - Use **prettier** extension for code linting
 
-#### Configuration - Settings.json in VS Code
+## Deployment
+
+Note that the `master` branch is deployed to server through [Midgard](https://midgard.iit-techambit.in). Any commits pushed to `master` will be deployed to server instantly
+
+A manual deployment can be triggered by going to the midgard dashboard.
+
+## Documentation
+
+The documentation for the Material Kit React is hosted at our [website](https://demos.creative-tim.com/material-kit-react/#/documentation/tutorial).
+
+## Configuration - Settings.json in VS Code
 
 ```json
 {
@@ -47,3 +57,25 @@ Second version of iit-techambit frontend.
 
 - Use Pascal case naming convention for naming files, variables meaningfully.
 - Usage of ES6 Features when compared to vanilla JS is highly recommended.
+  <<<<<<< HEAD
+  =======
+
+## Licensing
+
+- Copyright 2019 Creative Tim (https://www.creative-tim.com/)
+
+- Licensed under MIT (https://github.com/creativetimofficial/material-kit/blob/master/LICENSE.md)
+
+## Useful Links
+
+- [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
+- [Affiliate Program](https://www.creative-tim.com/affiliates/new) (earn money)
+- [Blog Creative Tim](http://blog.creative-tim.com/)
+- [Free Products](https://www.creative-tim.com/bootstrap-themes/free) from Creative Tim
+- [Premium Products](https://www.creative-tim.com/bootstrap-themes/premium) from Creative Tim
+- [React Products](https://www.creative-tim.com/bootstrap-themes/react-themes) from Creative Tim
+- [Angular Products](https://www.creative-tim.com/bootstrap-themes/angular-themes) from Creative Tim
+- [VueJS Products](https://www.creative-tim.com/bootstrap-themes/vuejs-themes) from Creative Tim
+- [More products](https://www.creative-tim.com/bootstrap-themes) from Creative Tim
+- Check our Bundles [here](https://www.creative-tim.com/bundles?ref="mk-github-readme")
+  > > > > > > > master
