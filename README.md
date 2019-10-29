@@ -57,8 +57,6 @@ The documentation for the Material Kit React is hosted at our [website](https://
 
 - Use Pascal case naming convention for naming files, variables meaningfully.
 - Usage of ES6 Features when compared to vanilla JS is highly recommended.
-  <<<<<<< HEAD
-  =======
 
 ## Licensing
 
@@ -78,4 +76,3 @@ The documentation for the Material Kit React is hosted at our [website](https://
 - [VueJS Products](https://www.creative-tim.com/bootstrap-themes/vuejs-themes) from Creative Tim
 - [More products](https://www.creative-tim.com/bootstrap-themes) from Creative Tim
 - Check our Bundles [here](https://www.creative-tim.com/bundles?ref="mk-github-readme")
-  > > > > > > > master
