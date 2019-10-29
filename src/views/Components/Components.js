@@ -67,11 +67,22 @@ export default function Components(props) {
   const handleSmash = () => {
     const inputMail = textInput.current.value;
     if (validator.validate(inputMail)) {
+      const tryIt = document.getElementById('tryIt');
+      tryIt.click();
       setIsNotSub(false);
       integrate.postData(subscribeEndpoint, { email: inputMail });
     } else setShowMailErr(true);
   };
 
+  const checkForEnter = () => {
+    const input = document.getElementsByTagName('input');
+    input[0].addEventListener('keyup', event => {
+      event.preventDefault();
+      if (event.keyCode === 13) {
+        handleSmash();
+      }
+    });
+  };
   return (
     <div className='landing-page'>
       {/* <Header
@@ -116,8 +127,9 @@ export default function Components(props) {
                           placeholder='enter email'
                           name='email'
                           ref={textInput}
+                          onChange={checkForEnter}
                         />
-                        <button type='submit' onClick={handleSmash}>
+                        <button type='submit' onClick={handleSmash} id='tryIt'>
                           Try it
                         </button>
                       </div>
