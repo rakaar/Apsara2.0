@@ -23,6 +23,9 @@ import './Header.scss';
 
 const useStyles = makeStyles(styles);
 
+const isStoriesActive = () => window.location.pathname == '/stories';
+const isArchiveActive = () => window.location.pathname == '/archive';
+const isTeamActive = () => window.location.pathname == '/team';
 export default function HeaderLinks(props) {
   const classes = useStyles();
   return (
@@ -50,21 +53,30 @@ export default function HeaderLinks(props) {
           ]}
         /> */}
         <h1 color='transparent' target='_blank' className={classes.navLink}>
-          <Link to='/stories' style={{ color: '#555555' }}>
+          <Link
+            to='/stories'
+            style={{ color: isStoriesActive() ? '#2e96f3' : '#555555' }}
+          >
             Stories
           </Link>
         </h1>
       </ListItem>
       <ListItem className={classes.listItem}>
         <h1 color='transparent' target='_blank' className={classes.navLink}>
-          <Link to='/archive' style={{ color: '#555555' }}>
+          <Link
+            to='/archive'
+            style={{ color: isArchiveActive() ? '#2e96f3' : '#555555' }}
+          >
             Archive
           </Link>
         </h1>
       </ListItem>
       <ListItem className={classes.listItem}>
         <h1 color='transparent' target='_blank' className={classes.navLink}>
-          <Link to='/team' style={{ color: '#555555' }}>
+          <Link
+            to='/team'
+            style={{ color: isTeamActive() ? '#2e96f3' : '#555555' }}
+          >
             Team
           </Link>
         </h1>

@@ -100,7 +100,7 @@ export default function Components(props) {
                         Become tech savvy in just 5 minutes
                       </h3>
                       <h3 className={`${classes.subtitle} landing-subtitle`}>
-                        Get Updated with latest research and tech stories from
+                        Get updated with latest research and tech stories from
                         the PAN IIT Ecosystem, for free!
                       </h3>
                       {/* <CustomInput
@@ -166,7 +166,7 @@ export default function Components(props) {
         </Fragment>
       </div>
       <br />
-      <h2
+      {/* <h2
         className='carousel-title'
         style={{
           fontWeight: '400',
@@ -174,8 +174,8 @@ export default function Components(props) {
         }}
       >
         Our Readers Speak...
-      </h2>
-      <SectionCarousel />
+      </h2> */}
+      {/* <SectionCarousel /> */}
       {/* <div className='mobile-footer'>
         <MobileFooter />
       </div> */}

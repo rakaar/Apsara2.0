@@ -34,7 +34,7 @@ export default class Footer extends Component {
                 Terms and Conditions
               </a>
             </p>
-            <p>
+            {/* <p>
               <a
                 href='https://iit-techambit.in/#what_we_do'
                 className='footer-links'
@@ -42,7 +42,7 @@ export default class Footer extends Component {
                 {' '}
                 About{' '}
               </a>
-            </p>
+            </p> */}
           </div>
           <div className='mg-f'>
             <a href='https://www.facebook.com/iit.tech.ambit/?epa=SEARCH_BOX'>
@@ -62,14 +62,14 @@ export default class Footer extends Component {
             <p> IIT Kharagpur </p>
             <p> Kharagpur, 721302 </p>
             <p> wb, india </p>
-            <p> +91-8969169656 </p>
+            {/* <p> +91-8969169656 </p> */}
             <p className='mail-ft'>
               <a
-                href='mailto:devops@iit-techambit.in'
+                href='mailto:iit.technology.ambit@gmail.com'
                 target='blank'
                 className='footer-links'
               >
-                devops@iit-techambit.in
+                iit.technology.ambit@gmail.com
               </a>
             </p>
           </div>

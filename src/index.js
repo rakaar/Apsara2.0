@@ -11,7 +11,6 @@ import Navbar from 'views/Components/Navbar.js';
 import LandingPage from 'views/LandingPage/LandingPage.js';
 import ProfilePage from 'views/ProfilePage/ProfilePage.js';
 import LoginPage from 'views/LoginPage/LoginPage.js';
-import Footer from 'components/Footer/OldFooter.js';
 import Stories from 'views/Archive/Archive.js';
 import Team from 'views/Team/Team.js';
 import Issues from 'views/Stories/Stories.js';
@@ -29,7 +28,7 @@ ReactDOM.render(
       <Route path='/team' component={Team} />
       <Route path='/archive' component={Issues} />
       <Route exact path='/' component={Components} />
-      <Route path='/' component={Footer} />
+      {/* <Route path='/' component={Footer} /> */}
     </div>
   </Router>,
   document.getElementById('root')

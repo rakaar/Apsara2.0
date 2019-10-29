@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
 import StoriesCard from './StoriesCard';
+import Footer from '../../components/Footer/OldFooter';
 
 import config from '../../config';
 import integrate from '../../integrate';
@@ -21,17 +22,20 @@ export default function Archive() {
   }, []);
 
   return (
-    <div className='stories'>
-      {issuesArr.map(item => {
-        return (
-          <StoriesCard
-            cover_link={item.cover_link}
-            month={item.month}
-            year={item.year}
-            link={item.link}
-          />
-        );
-      })}
-    </div>
+    <Fragment>
+      <div className='stories'>
+        {issuesArr.map(item => {
+          return (
+            <StoriesCard
+              cover_link={item.cover_link}
+              month={item.month}
+              year={item.year}
+              link={item.link}
+            />
+          );
+        })}
+      </div>
+      <Footer />
+    </Fragment>
   );
 }

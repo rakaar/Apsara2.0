@@ -22,7 +22,7 @@ const useStyles = makeStyles(styles);
 export default function Cards(props) {
   const classes = useStyles();
   return (
-    <Card style={{ width: '24rem', margin: '40px' }} className='card'>
+    <Card style={{ width: '24rem', margin: '0 20px 40px' }} className='card'>
       <a href={props.link} target='_blank'>
         <img
           style={{ height: '260px', width: '100%', display: 'block' }}

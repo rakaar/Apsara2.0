@@ -12,9 +12,7 @@ const headerLinksStyle = theme => ({
     paddingTop: '0',
     paddingBottom: '0',
     color: 'inherit',
-    textTransform : 'none !important',
-
-
+    textTransform: 'none !important'
   },
   listItem: {
     float: 'left',
@@ -39,7 +37,7 @@ const headerLinksStyle = theme => ({
   },
   listItemText: {
     padding: '0 !important',
-    textTransform: 'none !important',
+    textTransform: 'none !important'
   },
   navLink: {
     color: 'inherit',
@@ -54,8 +52,8 @@ const headerLinksStyle = theme => ({
     margin: '0px',
     display: 'inline-flex',
     '&:hover,&:focus': {
-      color: 'inherit',
-      background: 'rgba(200, 200, 200, 0.2)'
+      color: 'inherit'
+      // background: 'rgba(200, 200, 200, 0.2)'
     },
     [theme.breakpoints.down('sm')]: {
       width: 'calc(100% - 30px)',
@@ -116,7 +114,7 @@ const headerLinksStyle = theme => ({
       padding: '10px 20px',
       fontWeight: '800',
       fontSize: '20px',
-      textTransform: 'none !important',
+      textTransform: 'none !important'
     }
   },
   ...tooltip,
