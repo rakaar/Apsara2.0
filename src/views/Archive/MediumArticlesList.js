@@ -13,7 +13,7 @@ const MediumArticlesList = [
   {
     title: 'Novel 3D Printed Robotic Knee',
     desc:
-      'Modern prosthetic limbs are far more superior than those devloped in the last century but these new models have their limits.',
+      'Modern prosthetic limbs are far more superior than those devloped in the last century but these new models have their limits',
     link:
       'https://medium.com/iit-technology-ambit/novel-3d-printed-robotic-knee-6223a2a878d3',
     date: '9 Oct',

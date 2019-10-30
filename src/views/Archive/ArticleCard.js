@@ -24,16 +24,16 @@ export default function Cards(props) {
   return (
     <Card
       style={{
-        minHeight: 'max-content',
-        width: '24rem',
-        margin: '0 20px 40px'
+        minHeight: 'min-content',
+        width: '20rem',
+        margin: '0 5px 40px'
       }}
       className='card'
     >
       <a href={props.link} target='_blank'>
         <img
           style={{
-            height: '260px',
+            height: '210px',
             width: '100%',
             display: 'block',
             backgroundSize: 'cover',
@@ -44,13 +44,13 @@ export default function Cards(props) {
           alt='Card-img-cap'
         />
       </a>
-      <CardBody>
+      <CardBody style={{ position: 'relative' }}>
         <h4 className={classes.cardTitle} id='article-title'>
           <a href={props.link} target='_blank'>
             {props.title}
           </a>
         </h4>
-        <p>{props.desc}</p>
+        <p style={{ paddingBottom: '2em' }}>{props.desc}</p>
         <div className='flex-cont'>
           <span className='author'>- {props.author}</span>
           <div className='date-min-read'>
