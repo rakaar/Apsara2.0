@@ -8,11 +8,6 @@
 //   }
 // }
 
-.date {
-  color: #3e9fef;
-  font-weight: 1000;
-}
-
 .custom-button-style {
   font-size: 1em !important;
   float: right;
@@ -24,21 +19,13 @@
 .flex-cont {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
-// .flex-cont {
-//   display: flex;
-//   align-content: center;
-//   align-items: center;
-//   flex-wrap: wrap;
-//   flex-direction: row-reverse;
-//   justify-content: space-between;
-// }
 
-.min-read {
-  color: #738a94;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+.date-min-read {
+  float: right;
+  color: #999999;
+  font-weight: 600;
 }
 
 .card {
@@ -62,18 +49,11 @@
 }
 
 .author {
-  font-weight: 300;
+  font-weight: 700;
 }
 
 @media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-
-  // .other-data {
-  //   margin-top: 0;
-  //   span {
-  //     display: block;
-  //     font-size: 0.9em;
-  //     line-height: 1.1em;
-  //   }
-  // }
+  .flex-cont {
+    font-size: 0.9em;
+  }
 }

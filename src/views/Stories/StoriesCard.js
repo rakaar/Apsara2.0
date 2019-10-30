@@ -24,7 +24,7 @@ export default function Cards(props) {
 
   const parseMonthName = str => {
     let monthName = str.slice(6, 11);
-    monthName = monthName.toUpperCase();
+
     return monthName;
   };
   return (
@@ -41,12 +41,12 @@ export default function Cards(props) {
       />
       <CardBody>
         <div className='issue-data'>
-          <span className='date'>
-            {parseMonthName(props.month)} {props.year}
-          </span>
           <a href={props.link} className='download'>
             download
           </a>
+          <span className='date'>
+            {parseMonthName(props.month)}, {props.year}
+          </span>
         </div>
       </CardBody>
       {/* <CardBody>

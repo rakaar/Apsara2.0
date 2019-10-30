@@ -8,13 +8,16 @@
 .date {
   color: #666;
   font-weight: 600;
-  font-size: 1.1em;
+  font-size: 1.3em;
+  text-transform: capitalize;
+  margin-right: -5%;
 }
 
 .download {
   box-sizing: border-box;
-  color: #444;
-  background: #eee;
+  color: #eee;
+  background: #2e96f3;
+  border-radius: 25px 25px !important;
   font-weight: 800;
   font-size: 1.1em;
   text-transform: uppercase;
@@ -23,9 +26,23 @@
   border-radius: 6px;
   cursor: pointer;
   display: inline-block;
+  margin-left: -5%;
 }
 
 .download:hover {
   background-color: #eef;
   transition: all 0.5s;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .download {
+    font-size: 1em;
+    margin-left: -5%;
+  }
+
+  .date {
+    font-size: 1.2em;
+    margin-right: -5%;
+  }
 }

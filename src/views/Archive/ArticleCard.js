@@ -22,10 +22,23 @@ const useStyles = makeStyles(styles);
 export default function Cards(props) {
   const classes = useStyles();
   return (
-    <Card style={{ width: '24rem', margin: '0 20px 40px' }} className='card'>
+    <Card
+      style={{
+        minHeight: 'max-content',
+        width: '24rem',
+        margin: '0 20px 40px'
+      }}
+      className='card'
+    >
       <a href={props.link} target='_blank'>
         <img
-          style={{ height: '260px', width: '100%', display: 'block' }}
+          style={{
+            height: '260px',
+            width: '100%',
+            display: 'block',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center center'
+          }}
           className={classes.imgCardTop}
           src={props.img}
           alt='Card-img-cap'
@@ -39,18 +52,11 @@ export default function Cards(props) {
         </h4>
         <p>{props.desc}</p>
         <div className='flex-cont'>
-          {/* <Button
-              className='read-more custom-button-style'
-              color='twitter'
-              round
-              href={props.link}
-              target='blank'
-            >
-              Read More
-            </Button> */}
-          <span className='author'>{props.author}</span>
-          <span className='date'>{props.date} &bull;</span>
-          <span className='min-read'>{props.min} min read</span>
+          <span className='author'>- {props.author}</span>
+          <div className='date-min-read'>
+            <span>{props.date} &bull;</span>
+            <span> {props.min} min read</span>
+          </div>
         </div>
       </CardBody>
     </Card>
