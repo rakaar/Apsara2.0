@@ -24,7 +24,6 @@
 .flex-cont {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
 // .flex-cont {
 //   display: flex;
@@ -60,6 +59,10 @@
   a {
     color: #15171a;
   }
+}
+
+.author {
+  font-weight: 300;
 }
 
 @media only screen and (max-width: 768px) {
