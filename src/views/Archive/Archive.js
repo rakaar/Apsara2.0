@@ -5,7 +5,7 @@ import Footer from '../../components/Footer/OldFooter';
 import './Archive.scss';
 import MediumArticlesList from './MediumArticlesList.js';
 
-const basecdn = 'https://cdn.iit-techambit.in/storyImages/';
+const basecdn = 'https://ambitcdn.sgp1.digitaloceanspaces.com/storyImages/';
 
 export default function Archive() {
   return (
