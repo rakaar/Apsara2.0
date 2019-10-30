@@ -48,7 +48,8 @@ export default function Cards(props) {
             >
               Read More
             </Button> */}
-          <span className='date'>{props.date}</span>
+          <span className='author'>{props.author}</span>
+          <span className='date'>{props.date} &bull;</span>
           <span className='min-read'>{props.min} min read</span>
         </div>
       </CardBody>

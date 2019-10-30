@@ -21,6 +21,7 @@ export default function Archive() {
               date={item.date}
               min={item.min}
               img={basecdn + item.img}
+              author={item.author}
             />
           );
         })}
