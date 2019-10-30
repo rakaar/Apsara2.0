@@ -55,8 +55,8 @@ const TeamList = [
     img: images['Arya.jpg'],
     name: 'Arya S Jyothi',
     role: 'Editorial Team',
-    fb: '',
-    ln: ''
+    fb: '#',
+    ln: '#'
   },
   {
     img: images['Koushiki.jpg'],
@@ -91,7 +91,7 @@ const TeamList = [
     name: 'Aritra Biswas',
     role: 'Editorial Team',
     fb: 'https://www.facebook.com/aritra.biswas.186',
-    ln: ''
+    ln: '#'
   },
   {
     img: images['Jasmine.jpg'],
@@ -105,8 +105,8 @@ const TeamList = [
     img: images['Aastha.jpg'],
     name: 'Aastha Jakher',
     role: 'Editorial Team',
-    fb: '',
-    ln: ''
+    fb: '#',
+    ln: '#'
   },
   {
     img: images['Tanishq.jpg'],

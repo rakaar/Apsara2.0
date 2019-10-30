@@ -36,10 +36,10 @@ export default function Cards(props) {
         <h3 className={classes.cardTitle}>{props.name}</h3>
         <h4 className='role'>{props.role}</h4>
         <div className='social-links'>
-          <a href={props.ln}>
+          <a href={props.ln} target='_blank'>
             <i class='fab fa-linkedin'></i>
           </a>
-          <a href={props.fb}>
+          <a href={props.fb} target='_blank'>
             <i class='fab fa-facebook-f'></i>
           </a>
         </div>

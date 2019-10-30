@@ -18,6 +18,8 @@ export default function Archive() {
               img={member.img}
               name={member.name}
               role={member.role}
+              ln={member.ln}
+              fb={member.fb}
             />
           );
         })}
