@@ -30,10 +30,19 @@ export default function Cards(props) {
         className={classes.imgCardTop}
         src={props.img}
         alt='Card-img-cap'
+        id='team-pic'
       />
       <CardBody className='name-role'>
         <h3 className={classes.cardTitle}>{props.name}</h3>
         <h4 className='role'>{props.role}</h4>
+        <div className='social-links'>
+          <a href={props.ln}>
+            <i class='fab fa-linkedin'></i>
+          </a>
+          <a href={props.fb}>
+            <i class='fab fa-facebook-f'></i>
+          </a>
+        </div>
       </CardBody>
     </Card>
   );
