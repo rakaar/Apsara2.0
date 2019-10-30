@@ -65,11 +65,11 @@ export default class Footer extends Component {
             {/* <p> +91-8969169656 </p> */}
             <p className='mail-ft'>
               <a
-                href='mailto:iit.technology.ambit@gmail.com'
+                href='mailto:connect@iit-techambit.in'
                 target='blank'
                 className='footer-links'
               >
-                iit.technology.ambit@gmail.com
+                connect@iit-techambit.in
               </a>
             </p>
           </div>
