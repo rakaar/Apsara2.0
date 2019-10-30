@@ -15,6 +15,7 @@ const headerLinksStyle = theme => ({
     textTransform: 'none !important'
   },
   listItem: {
+    cursor: 'pointer !important',
     float: 'left',
     color: 'inherit',
     position: 'relative',
@@ -51,6 +52,7 @@ const headerLinksStyle = theme => ({
     textDecoration: 'none',
     margin: '0px',
     display: 'inline-flex',
+
     '&:hover,&:focus': {
       color: 'inherit'
       // background: 'rgba(200, 200, 200, 0.2)'

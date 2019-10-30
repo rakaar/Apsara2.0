@@ -65,7 +65,7 @@ export default function Header(props) {
   const logo = (
     <Link to='/' className='logo'>
       <img
-        style={{ height: '50px' }}
+        style={{ height: '40px' }}
         alt='IIT Tech Ambit Logo'
         src='https://cdn.iit-techambit.in/websiteAssets/logo.png'
       />

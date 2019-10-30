@@ -29,9 +29,10 @@ const isTeamActive = () => window.location.pathname == '/team';
 export default function HeaderLinks(props) {
   const classes = useStyles();
   return (
-    <List className={classes.list} id='header-links'>
-      <ListItem className={classes.listItem}>
-        {/* <CustomDropdown
+    <List className={classes.list}>
+      <div className='header-links'>
+        <ListItem className={classes.listItem}>
+          {/* <CustomDropdown
           noLiPadding
           buttonText='Newsletters'
           buttonProps={{
@@ -52,35 +53,37 @@ export default function HeaderLinks(props) {
             </a>
           ]}
         /> */}
-        <h1 color='transparent' target='_blank' className={classes.navLink}>
-          <Link
-            to='/stories'
-            style={{ color: isStoriesActive() ? '#2e96f3' : '#555555' }}
-          >
-            Stories
-          </Link>
-        </h1>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <h1 color='transparent' target='_blank' className={classes.navLink}>
-          <Link
-            to='/archive'
-            style={{ color: isArchiveActive() ? '#2e96f3' : '#555555' }}
-          >
-            Archive
-          </Link>
-        </h1>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <h1 color='transparent' target='_blank' className={classes.navLink}>
-          <Link
-            to='/team'
-            style={{ color: isTeamActive() ? '#2e96f3' : '#555555' }}
-          >
-            Team
-          </Link>
-        </h1>
-      </ListItem>
+
+          <h1 color='transparent' target='_blank' className={classes.navLink}>
+            <Link
+              to='/stories'
+              style={{ color: isStoriesActive() ? '#2e96f3' : '#555555' }}
+            >
+              Stories
+            </Link>
+          </h1>
+        </ListItem>
+        <ListItem className={classes.listItem}>
+          <h1 color='transparent' target='_blank' className={classes.navLink}>
+            <Link
+              to='/archive'
+              style={{ color: isArchiveActive() ? '#2e96f3' : '#555555' }}
+            >
+              Archive
+            </Link>
+          </h1>
+        </ListItem>
+        <ListItem className={classes.listItem}>
+          <h1 color='transparent' target='_blank' className={classes.navLink}>
+            <Link
+              to='/team'
+              style={{ color: isTeamActive() ? '#2e96f3' : '#555555' }}
+            >
+              Team
+            </Link>
+          </h1>
+        </ListItem>
+      </div>
       {/* <ListItem className={classes.listItem}> */}
       {/*<Tooltip title="Delete">
           <IconButton aria-label="Delete">
