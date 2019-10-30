@@ -46,7 +46,7 @@ const TeamList = [
   },
   {
     img: images['Koushiki.jpg'],
-    name: 'Koushiki Dasgupta Chaudhuri',
+    name: 'Koushiki Dasgupta',
     role: 'Editorial Team'
   },
   {

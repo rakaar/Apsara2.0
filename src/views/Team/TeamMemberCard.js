@@ -21,7 +21,10 @@ const useStyles = makeStyles(styles);
 export default function Cards(props) {
   const classes = useStyles();
   return (
-    <Card style={{ width: '19rem', margin: '40px 20px' }} className='card'>
+    <Card
+      style={{ width: '19rem', margin: '40px 20px', position: 'relative' }}
+      className='card'
+    >
       <img
         style={{ height: '304px', width: '100%', display: 'block' }}
         className={classes.imgCardTop}
