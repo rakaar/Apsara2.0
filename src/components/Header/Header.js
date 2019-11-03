@@ -14,12 +14,13 @@ import Hidden from '@material-ui/core/Hidden';
 import Drawer from '@material-ui/core/Drawer';
 // @material-ui/icons
 import Menu from '@material-ui/icons/Menu';
+import CancelTwoTone from '@material-ui/icons/ClearTwoTone';
 // core components
 import styles from 'assets/jss/material-kit-react/components/headerStyle.js';
 import './Header.scss';
 
 const useStyles = makeStyles(styles);
-
+const crossStyle = {marginLeft: '75%'};
 export default function Header(props) {
   const classes = useStyles();
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -109,8 +110,21 @@ export default function Header(props) {
           onClose={handleDrawerToggle}
         >
           <div className={classes.appResponsive}>
-            {leftLinks}
+          <div>
+          <IconButton
+            color='inherit'
+            aria-label='close drawer'
+            style={crossStyle}
+            onClick={handleDrawerToggle}
+          >
+          <CancelTwoTone />
+          </IconButton>
+          </div>
+            <div
+              onClick={handleDrawerToggle}
+            >
             {rightLinks}
+            </div>
           </div>
         </Drawer>
       </Hidden>
