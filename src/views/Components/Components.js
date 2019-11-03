@@ -129,7 +129,7 @@ export default function Components(props) {
                           ref={textInput}
                           onChange={checkForEnter}
                         />
-                        <button type='submit' onClick={handleSmash} id='tryIt'>
+                        <button type='submit' onClick={handleSmash} id='tryIt' class='tryIt'>
                           Try it
                         </button>
                       </div>
@@ -148,17 +148,16 @@ export default function Components(props) {
                 </GridContainer>
               ) : (
                 <Fragment>
-                  <h1 className={`${classes.subTitle} landing-subtitle-after`}>
-                    Welcome to the tech world
+                  <h1 className={`${classes.subContTitle} landing-subcontent`}>
+                    What's your tech ambition?
                   </h1>
                   <br />
                   <h3 className={`${classes.subtitle} landing-subtitle2-after`}>
-                    Watch out for weekly dose of the tech gospel every Sunday
-                    morning!
+                  Figure it out with our weekly dose of tech stories every <br/> Wednesday morning!
                   </h3>
                   <br />
                   <h3 className={`${classes.subtitle} landing-subtitle2-after`}>
-                    Can't Wait ?{' '}
+                    Can't wait?{' '}
                     <a href='/stories'>Check out our latest stories here!</a>
                   </h3>
                 </Fragment>
