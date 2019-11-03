@@ -12,7 +12,7 @@ const TeamList = [
   {
     img: images['Utkarsh.jpg'],
     name: 'Utkarsh Sinha',
-    role: 'Founder & CEO',
+    role: 'Founder',
     fb: 'https://www.facebook.com/utkarsh.sinha.186',
     ln: 'https://www.linkedin.com/in/utksn15/'
   },
