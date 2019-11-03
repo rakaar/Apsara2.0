@@ -55,7 +55,7 @@ export default function Components(props) {
   const logo = (
     <img
       style={{ width: '80%' }}
-      alt='IIT Tech Ambit Logo'
+      alt='IIT Tech Ambit'
       src='https://cdn.iit-techambit.in/websiteAssets/logo.png'
       className='logo'
     />
