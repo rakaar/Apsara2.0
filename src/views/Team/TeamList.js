@@ -31,9 +31,16 @@ const TeamList = [
     ln: 'https://www.linkedin.com/in/surajiyyengar/'
   },
   {
+    img: images['Kartik.jpg'],
+    name: 'Kartik Tyagi',
+    role: 'Head of Product',
+    fb: 'https://www.facebook.com/profile.php?id=100012190008591',
+    ln: 'https://www.linkedin.com/in/kartik-tyagi-935032129/'
+  },
+  {
     img: images['Unnikrishnan.jpg'],
     name: 'Unnikrishnan Nambiar',
-    role: 'Finance Head',
+    role: 'Finance Team',
     fb: 'https://www.facebook.com/unnikrishnan.nambiar.sj',
     ln: 'https://www.linkedin.com/in/unnikrishnannambiark/'
   },
@@ -52,11 +59,11 @@ const TeamList = [
     ln: 'https://www.linkedin.com/in/pranav-krishnan-97080a160/'
   },
   {
-    img: images['Arya.jpg'],
-    name: 'Arya S Jyothi',
+    img: images['Aditya.jpg'],
+    name: 'Aditya Gandhi',
     role: 'Editorial Team',
     fb: '#',
-    ln: '#'
+    ln: 'https://www.linkedin.com/in/aditya-gandhi011/'
   },
   {
     img: images['Koushiki.jpg'],
@@ -109,34 +116,6 @@ const TeamList = [
     ln: '#'
   },
   {
-    img: images['Tanishq.jpg'],
-    name: 'Tanishq Kishnani',
-    role: 'Product Team',
-    fb: 'https://www.facebook.com/tanishq.kishnanimaux',
-    ln: 'https://www.linkedin.com/in/tanishq-kishnani-4b0891194/'
-  },
-  {
-    img: images['Mansi.jpg'],
-    name: 'Mansi Shivhare',
-    role: 'Product Team',
-    fb: 'https://www.facebook.com/mansi.shivhare.94',
-    ln: 'https://www.linkedin.com/in/mansi-shivhare-4b79b4173/'
-  },
-  {
-    img: images['Kartik.jpg'],
-    name: 'Kartik Tyagi',
-    role: 'Product Team',
-    fb: 'https://www.facebook.com/profile.php?id=100012190008591',
-    ln: 'https://www.linkedin.com/in/kartik-tyagi-935032129/'
-  },
-  {
-    img: images['Haveen.jpg'],
-    name: 'Haveen Hrithic TL',
-    role: 'Product Team',
-    fb: 'https://www.facebook.com/haveen.hrithictl',
-    ln: 'https://www.linkedin.com/in/haveen-hrithic-90916716b'
-  },
-  {
     img: images['Shubham.jpg'],
     name: 'Shubham Mishra',
     role: 'Technical Team',
@@ -170,6 +149,27 @@ const TeamList = [
     role: 'Technical Team',
     fb: 'https://www.facebook.com/parth.paradkar.35',
     ln: 'https://www.linkedin.com/in/parth-paradkar/'
+  },
+  {
+    img: images['Tanishq.jpg'],
+    name: 'Tanishq Kishnani',
+    role: 'Product Team',
+    fb: 'https://www.facebook.com/tanishq.kishnanimaux',
+    ln: 'https://www.linkedin.com/in/tanishq-kishnani-4b0891194/'
+  },
+  {
+    img: images['Mansi.jpg'],
+    name: 'Mansi Shivhare',
+    role: 'Product Team',
+    fb: 'https://www.facebook.com/mansi.shivhare.94',
+    ln: 'https://www.linkedin.com/in/mansi-shivhare-4b79b4173/'
+  },
+  {
+    img: images['Haveen.jpg'],
+    name: 'Haveen Hrithic TL',
+    role: 'Product Team',
+    fb: 'https://www.facebook.com/haveen.hrithictl',
+    ln: 'https://www.linkedin.com/in/haveen-hrithic-90916716b'
   }
 ];
 
