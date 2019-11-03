@@ -129,7 +129,7 @@ export default function Components(props) {
                           ref={textInput}
                           onChange={checkForEnter}
                         />
-                        <button type='submit' onClick={handleSmash} id='tryIt'>
+                        <button type='submit' onClick={handleSmash} id='tryIt' class='tryIt'>
                           Try it
                         </button>
                       </div>
