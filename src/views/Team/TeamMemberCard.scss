@@ -43,11 +43,19 @@
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .social-links {
-    visibility: hidden;
-    float: right;
-    position: absolute;
-    right: 0.5em;
-    bottom: 0.1em;
+    // visibility: hidden;
+    float: left!important;
+    clear: left!important;
+    position: unset!important;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-left: -5px;
+    // right: 0.5em;
+    // bottom: 0.1em;
+  }
+
+  h4{
+    letter-spacing: normal!important;
   }
 
   #team-pic {
