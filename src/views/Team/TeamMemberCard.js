@@ -26,7 +26,7 @@ export default function Cards(props) {
       className='card'
     >
       <img
-        style={{ height: '304px', width: '100%', display: 'block' }}
+        style={{ height: '100%', width: '100%', display: 'block' }}
         className={classes.imgCardTop}
         src={props.img}
         alt='Card-img-cap'

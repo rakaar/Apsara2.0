@@ -44,14 +44,9 @@
   /* For mobile phones: */
   .social-links {
     // visibility: hidden;
-    float: left!important;
-    clear: left!important;
-    position: unset!important;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-top: 6px;
     margin-left: -5px;
-    // right: 0.5em;
-    // bottom: 0.1em;
+    bottom: 0.26em !important;
   }
 
   h4{
@@ -59,6 +54,6 @@
   }
 
   #team-pic {
-    height: 251px;
+    height: 100%;
   }
 }

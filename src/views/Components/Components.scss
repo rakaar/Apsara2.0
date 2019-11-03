@@ -10,6 +10,8 @@
   display: none !important;
 }
 
+
+
 .landing-logo {
   width: 150px !important;
 }
@@ -91,6 +93,22 @@
   border-radius: 100px 0px 0px 100px;
   box-shadow: 0 0 2.188em rgba(50, 50, 93, 0.1),
     0 0.313em 0.938em rgba(0, 0, 0, 0.07);
+}
+
+.tryIt {
+  color: white;
+  background-color: rgb(28, 127, 242);
+  border-radius: 0 100px 100px 0;
+  padding: 0px 25px;
+  font-size: 18px;
+  transition: .2s;
+}
+
+.tryIt:hover {
+  background-color: rgb(28, 127, 242);
+  border-radius: 100px;
+  padding: 15px 40px;
+  transform: scale(1.1);
 }
 
 .form button {
