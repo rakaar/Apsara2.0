@@ -153,7 +153,7 @@ export default function Components(props) {
                   </h1>
                   <br />
                   <h3 className={`${classes.subtitle} landing-subtitle2-after`}>
-                  Figure it out with our weekly dose of tech stories every <br/> Wednesday morning!
+                  Figure it out with our weekly dose of tech stories every <strong>Wednesday</strong> morning!
                   </h3>
                   <br />
                   <h3 className={`${classes.subtitle} landing-subtitle2-after`}>
