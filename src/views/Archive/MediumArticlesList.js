@@ -1,5 +1,16 @@
 const MediumArticlesList = [
   {
+    title: 'What’s next? — VR scientists talk!',
+    desc:
+      'It’s an exciting time at the Industrial and Systems Engineering Department IIT Kharagpur as they get their very own Virtual Reality and Safety Analytics Laboratory. We caught up with the men at the helm, Prof. Jhareswar Maiti and Prof. Pabitra Mitra...',
+    link:
+      'https://medium.com/iit-technology-ambit/whats-next-vr-scientists-talk-b5d433b45b6c',
+    date: '31 Oct',
+    min: '8',
+    img: 'vrlab.png',
+    author: 'Koushiki Dasgupta'
+  },
+  {
     title: 'A drug delivery gel that could be a vaccine for California’s wildfires',
     desc:
       'Materials scientists often stumble upon wildly different applications for materials they have created. Eric Appel, a professor at the ...',
@@ -9,6 +20,17 @@ const MediumArticlesList = [
     min: '3',
     img: 'drug.jpg',
     author: 'Pranav Krishnan'
+  },
+  {
+    title: 'In the Spotlight: Graphene Platelets',
+    desc:
+      'The 15-year-old supermaterial graphene is back in news, now in a slim and trim form ...',
+    link:
+      'https://medium.com/@iit.technology.ambit/in-the-spotlight-graphene-platelets-ce6da69fd80c',
+    date: '26 Oct',
+    min: '3',
+    img: 'graphene.jpeg',
+    author: 'Jasmine Jerry'
   },
   {
     title: 'Randomized evaluation tests to fight global poverty',
