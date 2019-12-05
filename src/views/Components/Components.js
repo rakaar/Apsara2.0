@@ -166,12 +166,15 @@ export default function Components(props) {
             <img
               className='drone'
               style={{
-                width: '40%',
+                width: '45%',
                 position: 'absolute',
-                right: '0'
+                right: '0',
+                transform: 'translateY(-18%)'
+               
+               
               }}
               src={DroneImg}
-              alt='Drone carrying a mobile'
+              alt='The tech'
             />
           </div>
         </Fragment>
