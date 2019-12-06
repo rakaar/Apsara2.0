@@ -57,7 +57,7 @@ export default function HeaderLinks(props) {
           <h1 color='transparent' target='_blank' className={classes.navLink}>
             <Link
               to='/stories'
-              style={{ color: isStoriesActive() ? '#2e96f3' : '#555555' }}
+              style={{ color: isStoriesActive() ? '#0F8797' : '#555555' }}
             >
               Stories
             </Link>
@@ -67,7 +67,7 @@ export default function HeaderLinks(props) {
           <h1 color='transparent' target='_blank' className={classes.navLink}>
             <Link
               to='/archive'
-              style={{ color: isArchiveActive() ? '#2e96f3' : '#555555' }}
+              style={{ color: isArchiveActive() ? '#0F8797' : '#555555' }}
             >
               Archive
             </Link>
@@ -77,7 +77,7 @@ export default function HeaderLinks(props) {
           <h1 color='transparent' target='_blank' className={classes.navLink}>
             <Link
               to='/team'
-              style={{ color: isTeamActive() ? '#2e96f3' : '#555555' }}
+              style={{ color: isTeamActive() ? '#0F8797' : '#555555' }}
             >
               Team
             </Link>
