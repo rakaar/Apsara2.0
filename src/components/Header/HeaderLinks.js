@@ -26,11 +26,22 @@ const useStyles = makeStyles(styles);
 const isStoriesActive = () => window.location.pathname == '/stories';
 const isArchiveActive = () => window.location.pathname == '/archive';
 const isTeamActive = () => window.location.pathname == '/team';
+const isNewsLetterActive = () => window.location.pathname == '/newsletter';
 export default function HeaderLinks(props) {
   const classes = useStyles();
   return (
     <List className={classes.list}>
       <div className='header-links'>
+      <ListItem className={classes.listItem}>
+          <h1 color='transparent' target='_blank' className={classes.navLink}>
+            <Link
+              to='/newsletter'
+              style={{ color: isNewsLetterActive() ? '#0F8797' : '#555555' }}
+            >
+              Newsletter
+            </Link>
+          </h1>
+        </ListItem>
         <ListItem className={classes.listItem}>
           {/* <CustomDropdown
           noLiPadding
