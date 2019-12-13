@@ -1,5 +1,6 @@
 import React from 'react';
 import SocialMediaButtons from './SocialMediaButtons';
+import SubscribeInput from './SubscribeInput';
 
 import './NewsletterPage.scss'
 
@@ -10,7 +11,7 @@ export default function Newsletter() {
                 <h1>Newsletter</h1>
             </div>
             <SocialMediaButtons />
-       
+            <SubscribeInput />
         </div>
     )
 }
