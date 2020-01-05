@@ -35,6 +35,10 @@ const endpoints = {
 
   issue: {
     getAll: 'issues/getAll'
+  },
+
+  newsletter: {
+    getLatest: 'newsletter/getLatest'
   }
 };
 
