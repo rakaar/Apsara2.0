@@ -66,9 +66,8 @@ export default function SubscribeInput() {
  
   return (
     <div>
-      <h1>hello</h1>
       <div className="ModalBtn">
-        <Button color="rose" onClick={() => setModal(true)}>
+        <Button color="primary" onClick={() => setModal(true)}>
           Subscribe
         </Button>
       </div>
