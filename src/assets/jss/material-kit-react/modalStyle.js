@@ -1,5 +1,8 @@
 const modalStyle = {
   modal: {
+    position: "absolute",
+    bottom: "-50px",
+    right: "-50px",
     borderRadius: "6px",
     padding: "50px"
     },

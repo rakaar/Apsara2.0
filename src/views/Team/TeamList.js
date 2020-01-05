@@ -143,6 +143,13 @@ const TeamList = [
     ln: 'https://www.linkedin.com/in/parth-paradkar/'
   },
   {
+    img: images['Rashil.jpg'],
+    name: 'Rashil Gandhi',
+    role: 'Developer',
+    fb: 'https://www.facebook.com/rashil2000',
+    ln: 'https://www.linkedin.com/in/rashil2000/'
+  },
+  {
     img: images['Tanishq.jpg'],
     name: 'Tanishq Kishnani',
     role: 'Product Manager',

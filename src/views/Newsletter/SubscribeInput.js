@@ -24,7 +24,7 @@ import '../../views/Components/Components.scss';
 const useStyles = makeStyles(modalStyle);
 const subscribeEndpoint = config.endpoints.subscribe;
 const Transition = React.forwardRef(function Transition(props, ref) {
-  return <Slide direction="down" ref={ref} {...props} />;
+  return <Slide direction="up" ref={ref} {...props} />;
 });
 
 export default function SubscribeInput() {
