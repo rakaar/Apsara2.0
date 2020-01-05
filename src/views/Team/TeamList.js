@@ -122,13 +122,6 @@ const TeamList = [
     ln: 'https://www.linkedin.com/in/mukul-mehta12/'
   },
   {
-    img: images['Ajay.jpg'],
-    name: 'Ajay Yadav',
-    role: 'Developer',
-    fb: 'https://www.facebook.com/ajajaj2807',
-    ln: 'https://www.linkedin.com/in/ajajaj2807/'
-  },
-  {
     img: images['Raghavendra.jpg'],
     name: 'Raghavendra kaushik',
     role: 'Developer',
