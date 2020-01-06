@@ -1,5 +1,28 @@
 const MediumArticlesList = [
   {
+    title: `Corporate tussles in the quantum realm - who’ll reign 'Supreme’?`,
+    desc:
+      `On the 23rd of this month, in a major milestone for the field of quantum computing, Google claimed to have achieved quantum supremacy in a paper released on the Nature magazine. Using their programmable superconducting processor...`,
+    link:
+      'https://medium.com/@iit.technology.ambit/corporate-tussles-in-the-quantum-realm-wholl-reign-supreme-310b2a48ce60',
+    date: '2 Nov',
+    min: '3',
+    img: 'quantum_supreme.png',
+    author: 'Archi Banerjee'
+  },
+  
+  {
+    title: 'Will Supersonic Travel make a comeback?',
+    desc:
+      'With transforming innovations, and increased awareness for climate change, will supersonic travel finally return?...',
+    link:
+      'https://medium.com/@iit.technology.ambit/will-supersonic-travel-make-a-comeback-1a91603f56a8',
+    date: '6 Nov',
+    min: '4',
+    img: 'supersonic.png',
+    author: 'Shaurya Shrivastava'
+  },
+  {
     title: 'What’s next? — VR scientists talk!',
     desc:
       'It’s an exciting time at the Industrial and Systems Engineering Department IIT Kharagpur as they get their very own Virtual Reality and Safety Analytics Laboratory. We caught up with the men at the helm, Prof. Jhareswar Maiti and Prof. Pabitra Mitra...',
