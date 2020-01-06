@@ -1,16 +1,4 @@
-const MediumArticlesList = [
-  {
-    title: `Corporate tussles in the quantum realm - who’ll reign 'Supreme’?`,
-    desc:
-      `On the 23rd of this month, in a major milestone for the field of quantum computing, Google claimed to have achieved quantum supremacy in a paper released on the Nature magazine. Using their programmable superconducting processor...`,
-    link:
-      'https://medium.com/@iit.technology.ambit/corporate-tussles-in-the-quantum-realm-wholl-reign-supreme-310b2a48ce60',
-    date: '2 Nov',
-    min: '3',
-    img: 'quantum_supreme.png',
-    author: 'Archi Banerjee'
-  },
-  
+const MediumArticlesList = [  
   {
     title: 'Will Supersonic Travel make a comeback?',
     desc:
@@ -21,6 +9,17 @@ const MediumArticlesList = [
     min: '4',
     img: 'supersonic.png',
     author: 'Shaurya Shrivastava'
+  },
+  {
+    title: `Corporate tussles in the quantum realm - who’ll reign 'Supreme’?`,
+    desc:
+      `On the 23rd of this month, in a major milestone for the field of quantum computing, Google claimed to have achieved quantum supremacy in a paper released on the Nature magazine. Using their programmable superconducting processor...`,
+    link:
+      'https://medium.com/@iit.technology.ambit/corporate-tussles-in-the-quantum-realm-wholl-reign-supreme-310b2a48ce60',
+    date: '2 Nov',
+    min: '3',
+    img: 'quantum_supreme.png',
+    author: 'Archi Banerjee'
   },
   {
     title: 'What’s next? — VR scientists talk!',
