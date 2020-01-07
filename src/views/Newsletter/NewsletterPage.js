@@ -21,6 +21,7 @@ export default function Newsletter() {
         const fetchData = async () => {
           let res = await integrate.getData(newsletterEndpoint, {});
           if (res.data == undefined) window.location.reload();
+          if(res.data.resource.newsletter_content == undefined) window.location.reload();
           SetHtml(res.data.resource.newsletter_content);
         };
         fetchData();
