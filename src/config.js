@@ -1,5 +1,6 @@
 const baseurl = 'https://api.iit-techambit.in/';
 const issuecdn = 'https://cdn.iit-techambit.in/issue/';
+const basecms = 'https://cms.iit-techambit.in/jsonapi/node/'
 const endpoints = {
   subscribe: 'post/subscribe',
   user: {
@@ -39,13 +40,18 @@ const endpoints = {
 
   newsletter: {
     getLatest: 'newsletter/getLatest'
+  },
+
+  cms: {
+    article: 'article'
   }
 };
 
 let config = {
   baseurl,
   endpoints,
-  issuecdn
+  issuecdn,
+  basecms
 };
 
 export default config;
