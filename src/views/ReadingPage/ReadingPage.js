@@ -4,6 +4,8 @@ import integrate from "../../integrate";
 import oculusrift from "./oculus-rift.jpg";
 
 import "./ReadingPage.scss";
+import SocialMediaButtons from "views/Newsletter/SocialMediaButtons";
+import SubscribeInput from "views/Newsletter/SubscribeInput";
 
 export default function ReadingPage() {
   const [article, setArticle] = useState({
@@ -33,19 +35,23 @@ export default function ReadingPage() {
   }, []);
 
   return (
-    <div className="reading-page">
-      <h3 className="article-date">{article.date}</h3>
-      <h1 className="article-title">{article.title}</h1>
-      <h3 className="article-author">{article.author}</h3>
-      <img src={oculusrift} alt="vr" className="image"/>
-      {article.content && article.content.map(item => {
-        return (
-          <div>
-            <div className="sub">{item.sub}</div>
-            <div className="text">{item.text}</div>
-          </div>
-        )
-      })}
+    <div>
+      <div className="reading-page">
+        <h3 className="article-date">{article.date}</h3>
+        <h1 className="article-title">{article.title}</h1>
+        <h3 className="article-author">{article.author}</h3>
+        <img src={oculusrift} alt="vr" className="image" />
+        {article.content && article.content.map(item => {
+          return (
+            <div>
+              <div className="sub">{item.sub}</div>
+              <div className="text">{item.text}</div>
+            </div>
+          )
+        })}
+      </div>
+      <SocialMediaButtons />
+      <SubscribeInput />
     </div>
   );
 }
