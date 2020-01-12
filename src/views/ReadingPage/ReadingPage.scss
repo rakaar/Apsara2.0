@@ -1,0 +1,24 @@
+.reading-page {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  min-width: 80%;
+  text-align: center;
+
+  .article-date {
+    color: #318897;
+    font-weight: 900;
+  }
+
+  .article-author {
+    color: #a9a9a9;
+    font-weight: 600;
+  }
+
+  .article-content {
+    line-height: 200%;
+    font-size: 150%;
+  }
+}
