@@ -9,7 +9,7 @@ export default function Archive() {
     <Fragment>
       <div className='team-intro'>
         <h1>Meet Our Team</h1>
-        <h2>We're dedicated to make research accessable to all!</h2>
+        <h2>We're dedicated to make research accessible to all!</h2>
       </div>
       <div className='team'>
         {TeamList.map(member => {
