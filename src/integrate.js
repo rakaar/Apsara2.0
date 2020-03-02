@@ -1,9 +1,6 @@
 import axios from 'axios';
 import config from './config.js';
 
- function getDataFromCMS(endpoint, data) {
-  
-}
 
 async function getData(endpoint, data) {
   return await axios
@@ -38,8 +35,7 @@ async function postData(endpoint, data) {
 
 let connectBackend = {
   getData,
-  postData,
-  getDataFromCMS
+  postData
 };
 
 export default connectBackend;
