@@ -2,11 +2,27 @@ import React, { useState, useEffect, Fragment } from "react";
 import config from "../../config";
 import integrate from "../../integrate";
 import oculusrift from "./oculus-rift.jpg";
+import axios from 'axios'
 
 import "./ReadingPage.scss";
 import SocialMediaButtons from "views/Newsletter/SocialMediaButtons";
 import SubscribeInput from "views/Newsletter/SubscribeInput";
 
+const number_month_mapping = {
+ '01': 'Jan',
+ '02': 'Feb',
+ '03': 'Mar',
+ '04': 'Apr',
+ '05': 'May',
+ '06': 'Jun',
+  '07': 'Jul',
+  '08':'Aug',
+  '09': 'Sep',
+  '10': 'Oct',
+  '11': 'Nov',
+  '12': 'Dec'
+
+}
 export default function ReadingPage() {
   const [article, setArticle] = useState({
     date: "",
@@ -14,11 +30,18 @@ export default function ReadingPage() {
     title: ``,
     content: ``
   });
+  const headers = {
+   headers: {
+    'Accept': 'application/vnd.api+json'
+   }
+  }
 
+  const URL = 'https://cms.iit-techambit.in/api/node/article/64f9a0db-7a6d-4755-aadf-781815f259b0'
+  // const URL = 'https://cms.iit-techambit.in/api/node/article?fields[node--article]=uid,title,created&include=uid'
   useEffect(() => {
     setArticle({
       ...article,
-      date: "2 Oct • Research",
+      date: "2 Oct",
       author: "Suraj Iyyengar",
       content: [
         {
@@ -32,6 +55,41 @@ export default function ReadingPage() {
       ],
       title: `What’s next? VR scientists talk!`
     });
+    
+    axios
+    .get(URL, headers)
+    .then(res => {
+      // console.log('res.data si ', res.data)
+      // console.log('see ', res.data.data[0])
+      // console.log('title ', res.data.data[0].attributes.title)
+      // console.log('authr ',)
+      // console.log('timestamp ', res.data.data[0].attributes.revision_timestamp)
+      // let article_timestamp = res.data.data[0].attributes.revision_timestamp
+      // let  article_timestamp_arr = article_timestamp.split('-')
+      // let article_date = article_timestamp_arr[2].split('T')[0]
+      // let article_month = article_timestamp_arr[1]
+      // console.log('article_month ', article_month)
+      // console.log('name of month ' ,number_month_mapping[article_month])
+      // let name_article_month = number_month_mapping[article_month]
+
+      // let content = res.data.data[0].attributes.body.value
+      // let title = res.data.data[0].attributes.title
+
+      // setArticle({
+      //   ...article,
+      //   date: article_date + ' ' + name_article_month,
+      //   author: '',
+      //   content,
+      //   title
+      // })
+
+      // console.log('content is ',res.data.data[0].attributes.body.value)
+
+    })
+    .catch(err => {
+      console.log(' api err is ', err)
+    })
+
   }, []);
 
   return (
@@ -41,14 +99,15 @@ export default function ReadingPage() {
         <h1 className="article-title">{article.title}</h1>
         <h3 className="article-author">{article.author}</h3>
         <img src={oculusrift} alt="vr" className="image" />
-        {article.content && article.content.map(item => {
+        {/* {article.content && article.content.map(item => {
           return (
             <div>
               <div className="sub">{item.sub}</div>
               <div className="text">{item.text}</div>
             </div>
           )
-        })}
+        })} */} 
+
       </div>
       <SocialMediaButtons />
       <SubscribeInput />
