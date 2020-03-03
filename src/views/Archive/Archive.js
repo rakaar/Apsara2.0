@@ -78,23 +78,25 @@ export default function Archive() {
             desc: item.attributes.body.summary,
             author: get_author_name(included, item.relationships.uid.data.id),
             date: get_date(item.attributes.created),
-            min: get_min_read(item.attributes.body.value)
+            min: get_min_read(item.attributes.body.value),
+            content: item.attributes.body.value 
           }
         })
 
+        setStoriesList(articleCards)
 
         console.log('article Cards arr is ', articleCards)
       })
       .catch(err => {
         console.log('Archive.js err is ', err)
       })
-  })
+  }, [])
 
   return (
     <Fragment>
       <div className='archive'>
         {/* <ArticleCard /> */}
-        {MediumArticlesList.map(item => {
+        {storiesList.map(item => {
           return (
             <ArticleCard
               title={item.title}
@@ -102,9 +104,11 @@ export default function Archive() {
               link={item.link}
               date={item.date}
               min={item.min}
-              img={basecdn + item.img}
+              img={item.image}
               author={item.author}
+              content = {item.content}
             />
+
           );
         })}
       </div>

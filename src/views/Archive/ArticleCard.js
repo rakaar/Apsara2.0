@@ -5,7 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Card from 'components/Card/Card.js';
 import CardBody from 'components/Card/CardBody.js';
 import Button from 'components/CustomButtons/Button.js';
-
+import { withRouter } from 'react-router-dom'
 import imagesStyles from 'assets/jss/material-kit-react/imagesStyles.js';
 
 import { cardTitle } from 'assets/jss/material-kit-react.js';
@@ -19,8 +19,17 @@ const styles = {
 
 const useStyles = makeStyles(styles);
 
-export default function Cards(props) {
+function Cards(props) {
   const classes = useStyles();
+  
+  const pushToReadingPage = (articleData) => {
+    console.log('here')
+    console.log('article Dta '.articleData)
+    // props.history.push({
+
+    // })
+  }
+
   return (
     <Card
       style={{
@@ -30,7 +39,7 @@ export default function Cards(props) {
       }}
       className='card'
     >
-      <a href={props.link} target='_blank'>
+      <a onClick={() => pushToReadingPage(props)} target='_blank'>
         <img
           style={{
             height: '210px',
@@ -46,7 +55,21 @@ export default function Cards(props) {
       </a>
       <CardBody style={{ position: 'relative' }}>
         <h4 className={classes.cardTitle} id='article-title'>
-          <a href={props.link} target='_blank'>
+          <a onClick={() => {
+            
+            props.history.push({
+              pathname: '/article',
+              state: {
+                data: {
+                  date: props.date,
+                  title: props.title,
+                  author: props.author,
+                  image: '',
+                  content: props.content,
+                }
+              }
+            })
+          }} target='_blank'>
             {props.title}
           </a>
         </h4>
@@ -62,3 +85,5 @@ export default function Cards(props) {
     </Card>
   );
 }
+
+export default withRouter(Cards)
