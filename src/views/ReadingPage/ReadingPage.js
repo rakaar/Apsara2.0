@@ -47,6 +47,7 @@ export default function ReadingPage(props) {
       author: data.author,
       content: data.content,
       title: data.title,
+      img: data.img
     });
     
     console.log('article is ', article)
@@ -58,7 +59,7 @@ export default function ReadingPage(props) {
         <h3 className="article-date">{article.date}</h3>
         <h1 className="article-title">{article.title}</h1>
         <h3 className="article-author">{article.author}</h3>
-        <img src={oculusrift} alt="vr" className="image" />
+        <img src={article.img} alt="vr" className="image" />
         <div className='text'>
           {renderHTML(article.content)}
         </div>
