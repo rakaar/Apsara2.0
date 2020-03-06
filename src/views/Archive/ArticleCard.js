@@ -21,15 +21,21 @@ const useStyles = makeStyles(styles);
 
 function Cards(props) {
   const classes = useStyles();
-  
-  const pushToReadingPage = (articleData) => {
-    console.log('here')
-    console.log('article Dta '.articleData)
-    // props.history.push({
-
-    // })
+ 
+  function pushToReadingPage() {
+    props.history.push({
+      pathname: '/article',
+      state: {
+        data: {
+          date: props.date,
+          title: props.title,
+          author: props.author,
+          img: props.img,
+          content: props.content,
+        }
+      }
+    })
   }
-
   return (
     <Card
       style={{
@@ -39,7 +45,7 @@ function Cards(props) {
       }}
       className='card'
     >
-      <a onClick={() => pushToReadingPage(props)} target='_blank'>
+      <a onClick={pushToReadingPage} target='_blank'>
         <img
           style={{
             height: '210px',
@@ -55,21 +61,7 @@ function Cards(props) {
       </a>
       <CardBody style={{ position: 'relative' }}>
         <h4 className={classes.cardTitle} id='article-title'>
-          <a onClick={() => {
-            
-            props.history.push({
-              pathname: '/article',
-              state: {
-                data: {
-                  date: props.date,
-                  title: props.title,
-                  author: props.author,
-                  image: '',
-                  content: props.content,
-                }
-              }
-            })
-          }} target='_blank'>
+          <a onClick={pushToReadingPage} target='_blank'>
             {props.title}
           </a>
         </h4>
