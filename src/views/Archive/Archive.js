@@ -11,7 +11,7 @@ const basecdn = "https://ambitcdn.sgp1.digitaloceanspaces.com/storyImages/";
 // const URL = 'https://cms.iit-techambit.in/api/node/article?fields[node--article]=uid,title,created,body&include=uid,field_image,field_image.image,field_image.image.file--file&fields[field_image]=image&fields[file--file]=uri,url'
 // const URL = 'https://cms.iit-techambit.in/api/node/article?include=field_image,field_image.image,field_image.image.file--file&fields[field_image]=image&fields[file--file]=uri,url'
 const URL =
-  "https://cms.iit-techambit.in/api/node/article?fields[node--article]=uid,title,created,body,field_image&include=field_image,field_image.image,field_image.image.file--file&fields[field_image]=image&fields[file--file]=uri,url&include=uid";
+"https://cms.iit-techambit.in/api/node/article?fields[node--article]=uid,title,created,body,field_image&include=field_image,field_image.image,field_image.image.file--file&fields[field_image]=image&fields[file--file]=uri,url&include=uid";
 const headers = {
   headers: {
     Accept: "application/vnd.api+json"
@@ -35,9 +35,10 @@ const number_month_mapping = {
 
 function get_date(date_from_api) {
   let article_timestamp_arr = date_from_api.split("-");
+  let year = article_timestamp_arr[0]
   let article_date = article_timestamp_arr[2].split("T")[0];
   let article_month_number = article_timestamp_arr[1];
-  return article_date + " " + number_month_mapping[article_month_number];
+  return article_date + " " + number_month_mapping[article_month_number] + ", " + year;
 }
 
 function get_min_read(content) {
@@ -54,8 +55,12 @@ function get_author_name(included, author_id) {
 
 
 async function get_image(img_link) {
-  let res = await axios.get(img_link);
-  let img = res.data.data.attributes.uri.url;
+  let res, img;
+  res = await axios.get(img_link);
+  if (res.data.data != undefined && res.data.data != null)
+    img = res.data.data.attributes.uri.url;
+  else 
+    img = ''
   return img;
 }
 export default function Archive() {
@@ -70,17 +75,23 @@ export default function Archive() {
   const [storiesList, setStoriesList] = useState([]);
  
   useEffect(() => {
+
+    // this is for testing remove it soon
+    axios.get('https://cms.iit-techambit.in/api/node/article/40e8e5de-8505-4bed-941e-0a3e14b179ce?fields[node--article]=title,body,created,field_image&include=field_image', headers).then(res => console.log('tests 1 ', res.data)).catch(e => console.log('err is tests1 ', e))
+    
     axios
       .get(URL, headers)
       .then(res => {
         let data = res.data.data;
         let included = res.data.included;
- 
+        console.log('data is this ', data);
         data.forEach(item => {
           // replace data[2] with item when all images are added
-          get_image(data[2].relationships.field_image.links.related["href"]).then(img => {
+          get_image(item.relationships.field_image.links.related["href"]).then(img => {
             console.log('get_img is  ', 'https://cms.iit-techambit.in'+img)
+            console.log ('item id is ', item.id)
             setStoriesList(storiesList => [...storiesList, {
+              id: item.id,
               img: 'https://cms.iit-techambit.in'+img,
               title: item.attributes.title,
               desc: item.attributes.body.summary,
@@ -106,6 +117,7 @@ export default function Archive() {
         {storiesList.map(item => {
           return (
             <ArticleCard
+              id={item.id}
               title={item.title}
               desc={item.desc}
               link={item.link}

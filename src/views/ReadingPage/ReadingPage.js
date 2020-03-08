@@ -1,4 +1,5 @@
 import React, { useState, useEffect, Fragment } from "react";
+import axios from 'axios';
 import config from "../../config";
 import integrate from "../../integrate";
 import oculusrift from "./oculus-rift.jpg";
@@ -24,6 +25,15 @@ const number_month_mapping = {
   '12': 'Dec'
 
 }
+
+function get_date(date_from_api) {
+  let article_timestamp_arr = date_from_api.split("-");
+  let year = article_timestamp_arr[0]
+  let article_date = article_timestamp_arr[2].split("T")[0];
+  let article_month_number = article_timestamp_arr[1];
+  return article_date + " " + number_month_mapping[article_month_number] + ", " + year;
+}
+
 export default function ReadingPage(props) {
   const [article, setArticle] = useState({
     date: "",
@@ -37,20 +47,27 @@ export default function ReadingPage(props) {
    }
   }
 
-  const URL = 'https://cms.iit-techambit.in/api/node/article/64f9a0db-7a6d-4755-aadf-781815f259b0'
-  // const URL = 'https://cms.iit-techambit.in/api/node/article?fields[node--article]=uid,title,created&include=uid'
   useEffect(() => {
-    const data = props.location.state.data
-    setArticle({
-      ...article,
-      date: data.date,
-      author: data.author,
-      content: data.content,
-      title: data.title,
-      img: data.img
-    });
+    // fetch again from Drupal so as to enable sharing
+    let id = window.location.pathname.split('/')[2];
+    let URL = `https://cms.iit-techambit.in/api/node/article/${id}?fields[node--article]=title,body,created,field_image&include=field_image,uid`
+    axios
+      .get(URL, headers)
+      .then(res => {
+        console.log('reading page ', res.data);
+        let data = res.data.data;
+        let included = res.data.included;
+        setArticle({
+          ...article,
+          date: get_date(data.attributes.created),
+          author: included[1].attributes.name,
+          content: data.attributes.body.value,
+          title: data.attributes.title,
+          img: 'https://cms.iit-techambit.in' + included[0].attributes.uri.url,
+        })
+      })
+      .catch(err => console.log('er in rp ', err))
     
-    console.log('article is ', article)
   }, []);
 
   return (
@@ -71,7 +88,7 @@ export default function ReadingPage(props) {
             </div>
           )
         })} */} 
-
+  
       </div>
       <SocialMediaButtons />
       <SubscribeInput />
