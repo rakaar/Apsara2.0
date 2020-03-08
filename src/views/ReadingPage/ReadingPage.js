@@ -54,7 +54,6 @@ export default function ReadingPage(props) {
     axios
       .get(URL, headers)
       .then(res => {
-        console.log('reading page ', res.data);
         let data = res.data.data;
         let included = res.data.included;
         setArticle({

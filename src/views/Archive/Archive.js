@@ -75,21 +75,14 @@ export default function Archive() {
   const [storiesList, setStoriesList] = useState([]);
  
   useEffect(() => {
-
-    // this is for testing remove it soon
-    axios.get('https://cms.iit-techambit.in/api/node/article/40e8e5de-8505-4bed-941e-0a3e14b179ce?fields[node--article]=title,body,created,field_image&include=field_image', headers).then(res => console.log('tests 1 ', res.data)).catch(e => console.log('err is tests1 ', e))
-    
-    axios
+   axios
       .get(URL, headers)
       .then(res => {
         let data = res.data.data;
         let included = res.data.included;
-        console.log('data is this ', data);
         data.forEach(item => {
           // replace data[2] with item when all images are added
           get_image(item.relationships.field_image.links.related["href"]).then(img => {
-            console.log('get_img is  ', 'https://cms.iit-techambit.in'+img)
-            console.log ('item id is ', item.id)
             setStoriesList(storiesList => [...storiesList, {
               id: item.id,
               img: 'https://cms.iit-techambit.in'+img,

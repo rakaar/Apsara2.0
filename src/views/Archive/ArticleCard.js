@@ -25,15 +25,6 @@ function Cards(props) {
   function pushToReadingPage() {
     props.history.push({
       pathname: '/article/' + props.id,
-      state: {
-        data: {
-          date: props.date,
-          title: props.title,
-          author: props.author,
-          img: props.img,
-          content: props.content,
-        }
-      }
     })
   }
   return (
