@@ -30,7 +30,7 @@ ReactDOM.render(
       <Route path='/stories' component={Stories} />
       <Route path='/team' component={Team} />
       <Route path='/archive' component={Issues} />
-      <Route path='/article' component={ReadingPage} />
+      <Route path='/article/:id' component={ReadingPage} />
       <Route exact path='/' component={Components} />
       {/* <Route path='/' component={Footer} /> */}
     </div>

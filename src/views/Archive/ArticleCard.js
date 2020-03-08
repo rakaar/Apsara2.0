@@ -24,7 +24,7 @@ function Cards(props) {
  
   function pushToReadingPage() {
     props.history.push({
-      pathname: '/article',
+      pathname: '/article/' + props.id,
       state: {
         data: {
           date: props.date,
