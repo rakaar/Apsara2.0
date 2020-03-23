@@ -32,45 +32,24 @@ export default function HeaderLinks(props) {
   return (
     <List className={classes.list}>
       <div className='header-links'>
-      <ListItem className={classes.listItem}>
+     
+        <ListItem className={classes.listItem}>
+         <h1 color='transparent' target='_blank' className={classes.navLink}>
+            <Link
+              to='/stories'
+              style={{ color: isStoriesActive() ? '#0F8797' : '#555555' }}
+            >
+              Stories
+            </Link>
+          </h1>
+        </ListItem>
+        <ListItem className={classes.listItem}>
           <h1 color='transparent' target='_blank' className={classes.navLink}>
             <Link
               to='/newsletter'
               style={{ color: isNewsLetterActive() ? '#0F8797' : '#555555' }}
             >
               Newsletter
-            </Link>
-          </h1>
-        </ListItem>
-        <ListItem className={classes.listItem}>
-          {/* <CustomDropdown
-          noLiPadding
-          buttonText='Newsletters'
-          buttonProps={{
-            className: classes.navLink,
-            color: 'transparent'
-          }}
-          // buttonIcon={Apps}
-          dropdownList={[
-            <Link to='/archive' className={classes.dropdownLink}>
-              Archive
-            </Link>,
-            <a
-              href='https://creativetimofficial.github.io/material-kit-react/#/documentation?ref=mkr-navbar'
-              target='_blank'
-              className={classes.dropdownLink}
-            >
-              Current Newsletters
-            </a>
-          ]}
-        /> */}
-
-          <h1 color='transparent' target='_blank' className={classes.navLink}>
-            <Link
-              to='/stories'
-              style={{ color: isStoriesActive() ? '#0F8797' : '#555555' }}
-            >
-              Stories
             </Link>
           </h1>
         </ListItem>
