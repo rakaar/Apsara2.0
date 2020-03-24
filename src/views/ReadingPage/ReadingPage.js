@@ -34,6 +34,12 @@ function get_date(date_from_api) {
   return article_date + " " + number_month_mapping[article_month_number] + ", " + year;
 }
 
+function get_tags(included) {
+  let tags_included = included.filter(item => item.type == "taxonomy_term--tags")
+  let tags = tags_included.map(item => item.attributes.name);
+  return tags;
+}
+
 export default function ReadingPage(props) {
   const [article, setArticle] = useState({
     date: "",
@@ -50,9 +56,9 @@ export default function ReadingPage(props) {
   useEffect(() => {
     // fetch again from Drupal so as to enable sharing
     let id = window.location.pathname.split('/')[2];
-    let URL = `https://cms.iit-techambit.in/api/node/article/${id}?fields[node--article]=title,body,created,field_image&include=field_image,uid`
+    let URL = `https://cms.iit-techambit.in/api/node/article/${id}?fields[node--article]=title,body,created,field_image&include=field_image,field_tags,uid`
     axios
-      .get(URL, headers)
+      .get(URL, headers)  
       .then(res => {
         let data = res.data.data;
         let included = res.data.included;
@@ -63,6 +69,7 @@ export default function ReadingPage(props) {
           content: data.attributes.body.value,
           title: data.attributes.title,
           img: 'https://cms.iit-techambit.in' + included[0].attributes.uri.url,
+          tags: get_tags(included)
         })
       })
       .catch(err => console.log('er in rp ', err))
@@ -79,17 +86,9 @@ export default function ReadingPage(props) {
         <div className='text'>
           {renderHTML(article.content)}
         </div>
+        {/* Rashil here we need tags design, u can get the tags at article.tags, which is an array of words of max size 5 */ }
         <Comments />
-        {/* {article.content && article.content.map(item => {
-          return (
-            <div>
-              <div className="sub">{item.sub}</div>
-              <div className="text">{item.text}</div>
-            </div>
-          )
-        })} */}
-
-      </div>
+ </div>
       <SocialMediaButtons />
       <SubscribeInput />
     </div>
