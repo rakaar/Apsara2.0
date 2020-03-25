@@ -8,7 +8,6 @@ class Comments extends React.Component {
     const disqusConfig = {
       identifier: id
     };
-    console.log(window.location.pathname);
     return (
       <div className="comment">
         <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />

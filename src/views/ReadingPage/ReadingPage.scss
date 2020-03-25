@@ -44,6 +44,17 @@
     line-height: 150%;
     font-size: 150%;
   }
+  .article-tags {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  .tags {
+    background-color: rgb(228, 228, 228);
+    padding: 8px;
+    margin-right: 10px;
+    font-size: small;
+    border-radius: 5px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -58,6 +69,12 @@
     }
     .text {
       font-size: 120%;
+    }
+    .tags {
+      padding: 1px 3px 1px 3px;
+      margin-right: 5px;
+      font-size: x-small;
+      border-radius: 0px;
     }
   }
 }
