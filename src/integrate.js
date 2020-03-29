@@ -1,6 +1,7 @@
 import axios from 'axios';
 import config from './config.js';
 
+
 async function getData(endpoint, data) {
   return await axios
     .get(config.baseurl + endpoint, {

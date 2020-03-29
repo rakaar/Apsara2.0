@@ -1,0 +1,80 @@
+.reading-page {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  min-width: 50%;
+  text-align: justify;
+  padding-bottom: 40px;
+  .image {
+    width: 100%;
+    padding: 40px 0px;
+  }
+
+  .article-date {
+    color: #318897;
+    font-weight: 900;
+    text-align: center;
+    font-size: 120%;
+  }
+
+  .article-author {
+    color: #a9a9a9;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .article-title {
+    text-align: center;
+  }
+
+  .article-content {
+    line-height: 200%;
+    font-size: 150%;
+  }
+  .sub {
+    padding: 10px 0px;
+    line-height: 150%;
+    font-weight: 700;
+    font-size: 150%;
+  }
+  .text {
+    padding: 10px 0px;
+    line-height: 150%;
+    font-size: 150%;
+  }
+  .article-tags {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  .tags {
+    background-color: rgb(228, 228, 228);
+    padding: 8px;
+    margin-right: 10px;
+    font-size: small;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .reading-page {
+    padding-top: 30px;
+    min-width: 78%;
+    .article-title {
+      font-size: 300%;
+    }
+    .sub {
+      font-size: 120%;
+    }
+    .text {
+      font-size: 120%;
+    }
+    .tags {
+      padding: 1px 3px 1px 3px;
+      margin-right: 5px;
+      font-size: x-small;
+      border-radius: 0px;
+    }
+  }
+}
