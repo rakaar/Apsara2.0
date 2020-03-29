@@ -80,6 +80,9 @@ export default function Archive() {
       .then(res => {
         let data = res.data.data;
         let included = res.data.included;
+        // temp remove it
+        console.log('what is the exact ', data)
+        data = data.sort((a,b) => new Date(b.attributes.created) - new Date(a.attributes.created))
         data.forEach(item => {
           // replace data[2] with item when all images are added
           get_image(item.relationships.field_image.links.related["href"]).then(img => {

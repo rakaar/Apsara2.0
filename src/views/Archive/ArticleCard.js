@@ -31,7 +31,7 @@ function Cards(props) {
     <Card
       style={{
         minHeight: 'min-content',
-        width: '20rem',
+        width: '27rem',
         margin: '0 5px 40px'
       }}
       className='card'
