@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Vidaloka&display=swap');
+@font-face {
+  font-family: MinionPro;
+  src: url('./MinionPro-Regular.otf');
+}
+
 .reading-page {
   position: absolute;
   top: 8%;
@@ -27,6 +33,7 @@
 
   .article-title {
     text-align: center;
+    font-family: 'Vidaloka', serif !important;
   }
 
   .article-content {
@@ -38,11 +45,13 @@
     line-height: 150%;
     font-weight: 700;
     font-size: 150%;
+    font-family: MinionPro;
   }
   .text {
     padding: 10px 0px;
-    line-height: 150%;
+    line-height: 200%;
     font-size: 150%;
+    font-family: MinionPro;
   }
   .article-tags {
     margin-bottom: 20px;
