@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Vidaloka&display=swap');
+@font-face {
+  font-family: MinionPro;
+  src: url('../ReadingPage/MinionPro-Regular.otf');
+}
+
 .custom-button-style {
   font-size: 1em !important;
   float: right;
@@ -28,6 +34,13 @@
   transform: scale(1.03);
 }
 
+#article-desc {
+  font-family: MinionPro;
+  font-size: 120%;
+  
+}
+
+
 #article-title:hover {
   text-decoration: underline;
   cursor: pointer;
@@ -35,7 +48,10 @@
 
 #article-title {
   a {
-    color: #15171a;
+    color: #000;
+    font-family: 'Vidaloka', serif !important;
+    font-size: 120%;
+    font-weight: 550;
   }
 }
 

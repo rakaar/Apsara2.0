@@ -56,7 +56,7 @@ function Cards(props) {
             {props.title}
           </a>
         </h4>
-        <p style={{ paddingBottom: '2em' }}>{props.desc}</p>
+        <p style={{ paddingBottom: '2em' }} id="article-desc">{props.desc}</p>
         <div className='flex-cont'>
           <span className='author'>- {props.author}</span>
           <div className='date-min-read'>
