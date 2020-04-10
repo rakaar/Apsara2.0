@@ -4,7 +4,7 @@
     // position: relative;
     // right: -85%;
     position: relative;
-    right: -50%;
+    right: -10%;
   }
   .logo {
     position: relative;
@@ -15,7 +15,7 @@
 //   position: relative;
 //   left: 500%;
 // }
-@media only screen and (max-width: 1450px)  and (min-width: 600px){
+@media only screen and (max-width: 1450px)  and (min-width: 992px){
   /* For mobile phones: */
   .logo {
     // position: relative;
@@ -26,6 +26,39 @@
   }
 }
 
+@media only screen and (max-width: 992px)  and (min-width: 960px){
+  /* For mobile phones: */
+  .logo {
+    // position: relative;
+    // left: 50%;
+
+    position: relative;
+    left: 80%;
+  }
+}
+
+@media only screen and (max-width: 960px)  and (min-width: 768px){
+  /* For mobile phones: */
+  .logo {
+    // position: relative;
+    // left: 50%;
+
+    position: relative;
+    left: 200%;
+  }
+}
+
+@media only screen and (max-width: 768px)  and (min-width: 600px){
+  /* For mobile phones: */
+  .logo {
+    // position: relative;
+    // left: 50%;
+
+    position: relative;
+    left: 80%;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   /* For mobile phones: */
   .logo {
@@ -33,6 +66,6 @@
     // left: 50%;
 
     position: relative;
-    left: 65%;
+    left: 90%;
   }
 }

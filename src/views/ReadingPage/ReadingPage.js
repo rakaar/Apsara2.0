@@ -82,10 +82,11 @@ export default function ReadingPage(props) {
   return (
     <div>
       <div className="reading-page">
-        <h3 className="article-date">{article.date}</h3>
+        <img src={article.img} alt="" className="image" />
         <h1 className="article-title">{article.title}</h1>
         <h3 className="article-author">{article.author}</h3>
-        <img src={article.img} alt="" className="image" />
+        <h3 className="article-date">{article.date}</h3>
+        <SocialMediaButtons />
         <div className="text">{renderHTML(article.content)}</div>
         <div className="article-tags">
           {article.tags &&
@@ -95,7 +96,6 @@ export default function ReadingPage(props) {
         </div>
         <Comments />
       </div>
-      <SocialMediaButtons />
       <SubscribeInput />
     </div>
   );
