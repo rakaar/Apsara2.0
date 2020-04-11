@@ -45,6 +45,17 @@ function get_tags(included) {
   return tags;
 }
 
+// replace the relative path in img src with absolute path
+function modify_img_src(html_content) {
+  let ind = html_content.indexOf(`src="`)
+  let current_path = html_content.slice(ind + 5, ind + 11)
+  if (current_path.startsWith("/sites")) {
+    let modified_html = html_content.replace(/src="/g, `src="https://cms.iit-techambit.in`)
+    return modified_html
+  } else 
+  return html_content
+}
+
 export default function ReadingPage(props) {
   const [article, setArticle] = useState({
     date: "",
@@ -71,12 +82,12 @@ export default function ReadingPage(props) {
           ...article,
           date: get_date(data.attributes.created),
           author: included[1].attributes.name,
-          content: data.attributes.body.value,
+          content: modify_img_src(data.attributes.body.value),
           title: data.attributes.title,
           img: "https://cms.iit-techambit.in" + included[0].attributes.uri.url,
           tags: get_tags(included)
         });
-      })
+        })
       .catch(err => console.log("er in rp ", err));
   }, []);
   return (
