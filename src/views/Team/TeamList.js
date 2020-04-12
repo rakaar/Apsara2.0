@@ -73,11 +73,11 @@ const TeamList = [
     ln: 'https://www.linkedin.com/in/aditya-gandhi011/'
   },
   {
-    img: images['Koushiki.jpg'],
-    name: 'Koushiki Dasgupta',
+    img: images['Pratim.jpg'],
+    name: 'Pratim Majumdar',
     role: 'Editor',
-    fb: 'https://www.facebook.com/koushiki.dasguptachaudhuri.9',
-    ln: 'https://www.linkedin.com/in/koushikidasguptachaudhuri99/'
+    fb: 'https://www.facebook.com/pratim.majumdar.10',
+    ln: 'https://www.linkedin.com/in/pratim-majumdar-7b1904186/'
   },
   {
     img: images['Archi.jpg'],
@@ -85,13 +85,6 @@ const TeamList = [
     role: 'Editor',
     fb: 'https://www.facebook.com/profile.php?id=100013952071030',
     ln: 'https://www.linkedin.com/in/archi-banerjee-a9b253196'
-  },
-  {
-    img: images['Shikhar.jpg'],
-    name: 'Shikhar Mohan',
-    role: 'Editor',
-    fb: 'https://www.facebook.com/shikhar.mohan2',
-    ln: 'https://www.linkedin.com/in/shikhar-mohan-a38606171'
   },
   {
     img: images['Shaurya.jpg'],
@@ -134,13 +127,6 @@ const TeamList = [
     role: 'Developer',
     fb: 'https://www.facebook.com/parth.paradkar.35',
     ln: 'https://www.linkedin.com/in/parth-paradkar/'
-  },
-  {
-    img: images['Rashil.jpg'],
-    name: 'Rashil Gandhi',
-    role: 'Developer',
-    fb: 'https://www.facebook.com/rashil2000',
-    ln: 'https://www.linkedin.com/in/rashil2000/'
   },
   {
     img: images['Tanishq.jpg'],
