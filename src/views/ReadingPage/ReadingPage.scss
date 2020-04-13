@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Vidaloka&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Vidaloka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @font-face {
   font-family: MinionPro;
-  src: url('./MinionPro-Regular.otf');
+  src: url("./MinionPro-Regular.otf");
 }
 
 .reading-page {
@@ -15,14 +15,14 @@
   padding-top: 40px;
   padding-bottom: 40px;
   .image {
-    width: 100%;
-    height: 100%;
+    width: 900px;
+    height: 900px;
     padding: 40px 0px;
   }
 
   .article-date {
     color: #318897;
-    font-family: 'Open Sans', sans-serif !important;
+    font-family: "Open Sans", sans-serif !important;
     font-weight: 900;
     //text-align: center;
     font-size: 1.24em;
@@ -31,7 +31,7 @@
 
   .article-author {
     color: #a9a9a9;
-    font-family: 'Open Sans', sans-serif !important;
+    font-family: "Open Sans", sans-serif !important;
     font-weight: 600;
     //text-align: center;
     font-size: 1.25em;
@@ -39,7 +39,7 @@
 
   .article-title {
     //text-align: center;
-    font-family: 'Vidaloka', serif !important;
+    font-family: "Vidaloka", serif !important;
     font-size: 2.2em;
   }
 
@@ -97,6 +97,10 @@
       margin-right: 5px;
       font-size: x-small;
       border-radius: 0px;
+    }
+    .image {
+      width: 272px;
+      height: 272px;
     }
   }
 }
