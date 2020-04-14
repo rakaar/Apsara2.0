@@ -39,8 +39,8 @@ function Cards(props) {
       <a onClick={pushToReadingPage} target='_blank'>
         <img
           style={{
-            height: '210px',
-            width: '100%',
+            height: '26em',
+            width: '26em',
             display: 'block',
             backgroundSize: 'cover',
             backgroundPosition: 'center center'
