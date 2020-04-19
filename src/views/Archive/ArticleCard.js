@@ -35,6 +35,7 @@ function Cards(props) {
         margin: '0 5px 40px'
       }}
       className='card'
+      id="article-card"
     >
       <a onClick={pushToReadingPage} target='_blank'>
         <img
@@ -48,6 +49,7 @@ function Cards(props) {
           className={classes.imgCardTop}
           src={props.img}
           alt='Card-img-cap'
+          id="article-card-img"
         />
       </a>
       <CardBody style={{ position: 'relative' }}>
