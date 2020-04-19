@@ -107,10 +107,11 @@ export default function Components(props) {
                       {/* <h1 className={`${classes.title} landing-logo`}>{logo}</h1> */}
                       <h3
                         className={`${classes.subContTitle} landing-subcontent`}
+                        id="title"
                       >
                         Become tech savvy in just <br/> 5 minutes
                       </h3>
-                      <h3 className={`${classes.subtitle} landing-subtitle`}>
+                      <h3 className={`${classes.subtitle} landing-subtitle`} id="subtitle">
                         Get updated with latest research and tech stories from
                         the PAN IIT Ecosystem, for free!
                       </h3>

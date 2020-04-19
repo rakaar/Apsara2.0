@@ -1,3 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Vidaloka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@font-face {
+  font-family: MinionPro;
+  src: url('../ReadingPage/MinionPro-Regular.otf');
+}
+
+#name {
+  font-family: "Vidaloka", serif !important;
+}
+
+.role {
+  font-family: MinionPro  !important;
+  font-size: 1.6em;
+}
 .name-role {
   position: absolute;
   bottom: 0px;

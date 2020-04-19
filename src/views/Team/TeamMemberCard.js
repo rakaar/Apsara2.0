@@ -33,7 +33,7 @@ export default function Cards(props) {
         id='team-pic'
       />
       <CardBody className='name-role'>
-        <h3 className={classes.cardTitle}>{props.name}</h3>
+        <h3 className={classes.cardTitle} id="name">{props.name}</h3>
         <h4 className='role'>{props.role}</h4>
         <div className='social-links'>
           <a href={props.ln} target='_blank'>

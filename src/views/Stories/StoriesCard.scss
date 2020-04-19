@@ -1,3 +1,8 @@
+@font-face {
+  font-family: MinionPro;
+  src: url('../ReadingPage/MinionPro-Regular.otf');
+}
+
 .issue-data {
   margin-top: 10px;
   display: flex;
@@ -8,9 +13,10 @@
 .date {
   color: #666;
   font-weight: 600;
-  font-size: 1.3em;
+  font-size: 1.6em;
   text-transform: capitalize;
   margin-right: -5%;
+  font-family: MinionPro;
 }
 
 .download {
@@ -27,6 +33,7 @@
   cursor: pointer;
   display: inline-block;
   margin-left: -5%;
+  font-family: MinionPro;
 }
 
 .download:hover {
