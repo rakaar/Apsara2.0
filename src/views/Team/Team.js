@@ -8,8 +8,8 @@ export default function Archive() {
   return (
     <Fragment>
       <div className='team-intro'>
-        <h1>Meet Our Team</h1>
-        <h2>We're dedicated to make research accessible to all!</h2>
+        <h1 className='title'>Meet Our Team</h1>
+        <h2 className='subtitle'>We're dedicated to make research accessible to all!</h2>
       </div>
       <div className='team'>
         {TeamList.map(member => {
