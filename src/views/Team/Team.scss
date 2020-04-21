@@ -1,7 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Vidaloka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@font-face {
+  font-family: MinionPro;
+  src: url('../ReadingPage/MinionPro-Regular.otf');
+}
+
 .team-intro {
   text-align: center;
   margin-top: 8%;
+
+  .title{
+    font-family: "Vidaloka", serif !important;
+  
+  }
+  
+  .subtitle {
+    font-family: MinionPro  !important; 
+  }
 }
+
+
 
 .team {
   // transform: translateY(12%);
