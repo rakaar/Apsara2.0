@@ -139,28 +139,40 @@ const x = `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.
   </table><table class="module" role="module" data-type="text" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="894503ba-3a7a-4e3a-baf5-86fa917c24dd" data-mc-module-version="2019-10-22">
     <tbody>
       <tr>
-        <td style="padding:6px 0px 18px 0px; line-height:22px; text-align:inherit; background-color:#9fb61f;" height="100%" valign="top" bgcolor="#9fb61f" role="module-content"><div><div style="font-family: inherit; text-align: center"><span style="color: #ffffff; font-size: 11px">1st May 2020</span></div><div></div></div></td>
+        <td style="padding:6px 0px 18px 0px; line-height:22px; text-align:inherit; background-color:#9fb61f;" height="100%" valign="top" bgcolor="#9fb61f" role="module-content"><div><div style="font-family: inherit; text-align: center"><span style="color: #ffffff; font-size: 11px">2nd May 2020</span></div><div></div></div></td>
       </tr>
     </tbody>
   </table><table class="module" role="module" data-type="text" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="462edd20-9ad3-406b-ac89-8ac6b3b10d9c" data-mc-module-version="2019-10-22">
     <tbody>
       <tr>
-        <td style="padding:18px 5px 18px 5px; line-height:22px; text-align:inherit;" height="100%" valign="top" bgcolor="" role="module-content"><div><div style="font-family: inherit; text-align: inherit"><span style="font-size: 14px; font-family: arial,helvetica,sans-serif"><strong>Good morning. </strong></span><span style="font-size: 14px; font-family: arial,helvetica,sans-serif">Utkarsh here. We had barely come out of the Great Recession of 2008 to find ourselves entrenched in an economic slump much similar to the Great Depression of the 1920s.&nbsp;</span></div>
-<div style="font-family: inherit"><br></div>
-<div style="font-family: inherit"><span style="font-size: 14px; font-family: arial,helvetica,sans-serif">With the next series of newsletters, I'll walk us through how an economy works, what COVID means for us - is it really as bad as the Great Depression, and then review the fiscal and monetary policies taken by India &amp; the globe against it.&nbsp;</span></div>
-<div style="font-family: inherit"><br></div>
-<div style="font-family: inherit"><span style="font-size: 14px; font-family: arial,helvetica,sans-serif">I was able to understand a lot about how the economic machine works after going through Ray Dalio's </span><a href="https://www.youtube.com/watch?v=PHe0bXAIuk0&amp;t=316s"><span style="font-size: 14px; font-family: arial,helvetica,sans-serif">template</span></a><span style="font-size: 14px; font-family: arial,helvetica,sans-serif"> on the same. It's crisp and easy to understand. So let's jump right in:<br>
+        <td style="padding:18px 5px 18px 5px; line-height:22px; text-align:inherit;" height="100%" valign="top" bgcolor="" role="module-content"><div><div style="font-family: inherit; text-align: inherit"><span style="font-size: 14px; font-family: arial, helvetica, sans-serif"><strong>Good evening. </strong></span><span style="font-size: 14px; font-family: arial, helvetica, sans-serif">Utkarsh here. I've got a feeling that many of you get our newsletters in the 'Updates' or 'Promotions' tab in your Gmail, maybe even in spam. If you're reading this on a </span>desktop<span style="font-size: 14px; font-family: arial, helvetica, sans-serif"> then simply hover the cursor over the DP next to our name and 'Add contact'. If you're reading on </span>mobile then go <a href="https://contacts.google.com/">here</a> and on the top-left open 'Create Contact' and save our email ID.</div>
+<div style="font-family: inherit; text-align: inherit"><br></div>
+<div style="font-family: inherit; text-align: inherit">Okay, back to business. In yesterday's email, I walked you through what GDP basically is and how central credit is to GDP. Today, I'll focus more on the factors that drive GDP growth.</div>
+<div style="font-family: inherit; text-align: inherit"><br></div>
+<div style="font-family: inherit; text-align: inherit">There are 3 factors that drive GDP growth:<br>
 <br>
-An economy is made up of transactions. Transactions happen whenever anything is bought/sold. A transaction is an exchange of money/credit for goods/services/or financial assets. Now GDP = total spending = total money + total credit spent. (This may not be the best definition, but just get the feels). An economy has 4 kinds of stakeholders: people, businesses, banks, and the government all doing transactions with and within each other. <br>
+- <u><strong>Productivity:</strong></u> Productivity always increases &amp; GDP increases linearly with it. It matters more in the long run. Technology is something that increases productivity.&nbsp;</div>
+<div style="font-family: inherit; text-align: inherit"><br>
+- <u><strong>Short term debt cycle:</strong></u> Credit drives GDP. With the onset of lending: spending, and incomes increase. When production doesn't increase at the same rate at which income increases then it leads to an increase in prices. (Prices = Total spending/ total production). This is called inflation. Too much inflation causes hyper-inflation where amongst other problems, rising prices get strenuous for lower-income groups whose purchasing power decreases drastically. This is what had happened to Germany in the Great Depression in 1923.<br>
 <br>
-The Government is the biggest seller &amp; buyer and is consisted of two important parts: the Central Government &amp; the Central Bank (RBI). The Central Government collects taxes and spends money for the nation's benefit and the Central Bank (RBI) that controls the amount of money and credit in the economy. The Central Bank influences money &amp; credit by controlling interest rates and printing money. <br>
+So the Central Bank in response, increases the borrowing rates, reducing further credit into the economy. This coupled with rising debts leads to lesser spending - prices drop and there is deflation or a recession in the economy. Technically, deflation means the economy is shrinking while recession means that the growth rate is decreasing.<br>
 <br>
-Now, credit is the most important part of the economy that drives GDP growth. When credit increases, a borrower can spend more, and hence someone earns more leading to an increase in the GDP. But credit brings along with it an undesired liability - debt. And here's where things get tricky.</span></div>
-<div style="font-family: inherit"><br></div>
-<div style="font-family: inherit"><span style="font-size: 14px; font-family: arial,helvetica,sans-serif">In the next newsletter tomorrow, I'll explain more about debt cycles and how they drive economic growth.</span></div>
-<div style="font-family: inherit"><br></div>
-<div style="font-family: inherit"><span style="font-size: 14px; font-family: arial,helvetica,sans-serif">Till then,</span></div>
-<div style="font-family: inherit"><span style="font-size: 14px; font-family: arial,helvetica,sans-serif">Utkarsh</span></div><div></div></div></td>
+Importantly, the Central Bank controls both parts of the cycle - reduces interest rates for expansion &amp; increases interest rates leading to a recession.<br>
+<br>
+The Short-term debt cycle happens for 5-8 years (Crest-to-trough) and repeats itself.<br>
+<br>
+- <u><strong>Long term debt cycle:</strong></u> But over both expansion &amp; recessions of a short-term debt cycle, the total debt simply keeps on increasing. This happens because debts rise faster than incomes, pushed by the human tendency to always keep spending more. Till now everything was going great albeit some hiccups from the short-term debt cycles and people kept buying more with borrowed money. Asset values kept on increasing along with income and hence people were creditworthy. But there comes a time when debts become too large and people have to cut back on spending. It's similar to a recession but here lowering interest rates doesn't save the day. Central banks already go down to a 0% interest rate yet no one borrows because no one wants further debt burdens! We've reached the start of a Depression.</div>
+<div style="font-family: inherit; text-align: inherit"><br></div>
+<div style="font-family: inherit; text-align: inherit">Like the short term debt cycle, the long term debt cycle is also periodic and repeats itself after ~75 years, ending in a Depression that marks the start of a new long term debt cycle.</div>
+<div style="font-family: inherit; text-align: inherit"><br>
+The debt burden, btw, is debt/income and this needs to be reduced ASAP - through a process called a deleveraging. Essentially, a Depression consists of a sharp decline in GDP that lasts 2-3 years and this is followed by a reflationary period that lasts for 7-10 years.&nbsp;</div>
+<div style="font-family: inherit; text-align: inherit"><br></div>
+<div style="font-family: inherit; text-align: inherit">The important question is: How do we steer out of a depression with minimal damages and rebuild the economy again? It happened in 1920s, then in 2008s, and is happening again now in 2020. Maybe the current Depression is not a product of the long term debt cycle but it is a Depression nevertheless.&nbsp;</div>
+<div style="font-family: inherit; text-align: inherit"><br></div>
+<div style="font-family: inherit; text-align: inherit">In tomorrow's newsletter, I'll explain why I (and many others, including economists) think we're in a Depression and back my argument with numbers that would compel you to think deeper.</div>
+<div style="font-family: inherit; text-align: inherit"><br></div>
+<div style="font-family: inherit; text-align: inherit"><span style="font-size: 14px; font-family: arial, helvetica, sans-serif">Till then,</span></div>
+<div style="font-family: inherit; text-align: inherit"><span style="font-size: 14px; font-family: arial, helvetica, sans-serif">Utkarsh</span></div><div></div></div></td>
       </tr>
     </tbody>
   </table><table class="module" role="module" data-type="divider" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="26cd6c00-892f-4842-a5c4-a04a71f76237">
@@ -213,5 +225,4 @@ Now, credit is the most important part of the economy that drives GDP growth. Wh
       </center>
     </body>
   </html>`
-
   export default x
