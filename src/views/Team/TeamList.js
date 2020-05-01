@@ -155,6 +155,20 @@ const TeamList = [
     role: 'Product Designer',
     fb: 'https://www.facebook.com/haveen.hrithictl',
     ln: 'https://www.linkedin.com/in/haveen-hrithic-90916716b'
+  },
+  {
+    img: images['Soham.jpg'],
+    name: 'Soham Saha',
+    role: 'Product Designer',
+    fb: 'https://www.facebook.com/profile.php?id=100005447295704',
+    ln: ''
+  },
+  {
+    img: images['Soumyadeep.jpg'],
+    name: 'Soumyadeep Nandi',
+    role: 'Product Designer',
+    fb: 'https://www.facebook.com/soumyadeep.theviper',
+    ln: 'https://www.linkedin.com/in/soumyadeep-nandi-4b4169171/'
   }
 ];
 

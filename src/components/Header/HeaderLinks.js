@@ -43,7 +43,7 @@ export default function HeaderLinks(props) {
             </Link>
           </h1>
         </ListItem>
-        {/* <ListItem className={classes.listItem}>
+        <ListItem className={classes.listItem}>
           <h1 color='transparent' target='_blank' className={classes.navLink}>
             <Link
               to='/newsletter'
@@ -52,14 +52,14 @@ export default function HeaderLinks(props) {
               Newsletter
             </Link>
           </h1>
-        </ListItem> */}
+        </ListItem>
         <ListItem className={classes.listItem}>
           <h1 color='transparent' target='_blank' className={classes.navLink}>
             <Link
               to='/archive'
               style={{ color: isArchiveActive() ? '#0F8797' : '#555555' }}
             >
-              Magazines
+              Archive
             </Link>
           </h1>
         </ListItem>
