@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import SocialMediaButtons from "./SocialMediaButtons";
 import SubscribeInput from "./SubscribeInput";
 import renderHTML from "react-render-html";
-
+import Button from '../../components/CustomButtons/Button'
 import config from "../../config";
 import integrate from "../../integrate";
 
 import LoaderSVG from "assets/img/loader.svg";
 
 import "./NewsletterPage.scss";
-import content from './content';
+import content from './NewslettersContent';
 
 const newsletterEndpoint = config.endpoints.newsletter.getLatest;
 
@@ -19,6 +19,11 @@ export default function Newsletter() {
       LoaderSVG +
       "' /></div>"
   );
+  
+  const [next, setNext] = useState('')
+  const [prev, setPrev] = useState('')
+
+  
 
   useEffect(() => {
     const fetchData = async () => {
@@ -29,7 +34,14 @@ export default function Newsletter() {
       // SetHtml(res.data.resource.newsletter_content);
 
       // exporting from a file remotely rather than backend
-      SetHtml(content);
+     content.forEach(item => {
+       if( item.href === window.location.pathname.split('/')[2]) {
+        SetHtml(item.content);
+        setNext(item.next_href);
+        setPrev(item.prev_href);
+       }
+      
+     })
     };
     fetchData();
   }, []);
@@ -41,8 +53,16 @@ export default function Newsletter() {
           {renderHTML(html)}
           <SocialMediaButtons />
         </div>
+       
         <SubscribeInput />
       </div>
+      {/* <div className="next-prev">
+      
+      { next != -1 ?   <Button type="button" color="success">Next</Button>: ''
+      }
+       { prev != -1 ?   <Button type="button" color="success">Next</Button>: ''
+      }
+     </div> */}
     </div>
   );
 }

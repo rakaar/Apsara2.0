@@ -7,6 +7,16 @@
     z-index: 999;
 }
 
+.next-prev {
+    position: absolute;
+    display: block;
+    bottom: -55vh;
+    left: 50vw;
+    transform: translateX(-50%);
+    z-index: 999;
+   
+   
+}
 
 @media only screen and (max-width: 1106px) and (min-width: 890px) {
     /* For mobile phones: */

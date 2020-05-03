@@ -15,6 +15,7 @@ import Stories from 'views/Archive/Archive.js';
 import Team from 'views/Team/Team.js';
 import Issues from 'views/Stories/Stories.js';
 import NewsletterPage from 'views/Newsletter/NewsletterPage.js';
+import NewsletterList from 'views/Newsletter/NewsletterList.js';
 import ReadingPage from 'views/ReadingPage/ReadingPage.js';
 import MobileFooter from 'views/Components/MobileFooter.js';
 var hist = createBrowserHistory();
@@ -26,7 +27,8 @@ ReactDOM.render(
       <Route path="/profile-page" component={ProfilePage} />
       <Route path="/login-page" component={LoginPage} /> */}
       <Route path='/' component={Navbar} />
-      <Route path='/newsletter' component={NewsletterPage} />
+      <Route exact path='/newsletter' component={NewsletterList} />
+      <Route exact path='/newsletter/:id' component={NewsletterPage} />
       <Route path='/stories' component={Stories} />
       <Route path='/team' component={Team} />
       <Route path='/archive' component={Issues} />
